@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/emilkarlsson/Code/lundbergsab/user/plugins/form/languages.yaml',
-    'modified' => 1489110750,
+    'modified' => 1490728852,
     'data' => [
         'en' => [
             'PLUGIN_FORM' => [
