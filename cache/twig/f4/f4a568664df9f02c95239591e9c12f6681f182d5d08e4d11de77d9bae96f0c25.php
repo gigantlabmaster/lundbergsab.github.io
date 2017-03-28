@@ -160,6 +160,6 @@ class __TwigTemplate_969ecf836f1ca072e825bdedd3e4f54e1fe3e15e8c8a990182b3fd5dc74
     {% set field = field|merge({'wrapper_classes': 'form-input-addon-wrapper'}) %}
 {% endif %}
 {{ parent() }}
-{% endblock %}", "forms/fields/text/text.html.twig", "/Users/emilkarlsson/Downloads/grav-skeleton-helium-site 2/user/plugins/form/templates/forms/fields/text/text.html.twig");
+{% endblock %}", "forms/fields/text/text.html.twig", "/Users/emilkarlsson/Code/lundbergsab/user/plugins/form/templates/forms/fields/text/text.html.twig");
     }
 }

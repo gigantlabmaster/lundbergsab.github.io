@@ -359,6 +359,6 @@ class __TwigTemplate_6d692bbe1d23409fdbe73944d0f0bec4bf35c8d685b71a1829c8ab877f3
         </div>
     </nav>
 {% endif %}
-", "partials/nav.html.twig", "/Users/emilkarlsson/Downloads/grav-skeleton-helium-site 2/user/plugins/admin/themes/grav/templates/partials/nav.html.twig");
+", "partials/nav.html.twig", "/Users/emilkarlsson/Code/lundbergsab/user/plugins/admin/themes/grav/templates/partials/nav.html.twig");
     }
 }

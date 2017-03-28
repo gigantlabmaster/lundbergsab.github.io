@@ -116,6 +116,6 @@ class __TwigTemplate_7326547264ad5b752eff0e562462f67a34ff23a4f1a6971d84693197d97
         </div>
     </div>
 {% endif %}
-", "partials/dashboard-statistics.html.twig", "/Users/emilkarlsson/Downloads/grav-skeleton-helium-site 2/user/plugins/admin/themes/grav/templates/partials/dashboard-statistics.html.twig");
+", "partials/dashboard-statistics.html.twig", "/Users/emilkarlsson/Code/lundbergsab/user/plugins/admin/themes/grav/templates/partials/dashboard-statistics.html.twig");
     }
 }

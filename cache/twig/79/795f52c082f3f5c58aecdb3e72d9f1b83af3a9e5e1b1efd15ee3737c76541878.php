@@ -72,6 +72,6 @@ class __TwigTemplate_5961c02d3d6e0ad586a38d684ebd38c1a63ee7e091e30b648044a0cac95
     type=\"email\"
     {% if field.multiple in ['on', 'true', 1] %}multiple=\"multiple\"{% endif %}
     {{ parent() }}
-{% endblock %}", "forms/fields/email/email.html.twig", "/Users/emilkarlsson/Downloads/grav-skeleton-helium-site 2/user/plugins/form/templates/forms/fields/email/email.html.twig");
+{% endblock %}", "forms/fields/email/email.html.twig", "/Users/emilkarlsson/Code/lundbergsab/user/plugins/form/templates/forms/fields/email/email.html.twig");
     }
 }

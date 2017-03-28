@@ -117,6 +117,6 @@ class __TwigTemplate_58f548ec714505800291728a1767db47924f2e019e60080ee55365d910c
 {% else %}
     <div class=\"padding\">You don't have sufficient access to view the dashboard...</div>
 {% endif %}
-", "partials/dashboard-pages.html.twig", "/Users/emilkarlsson/Downloads/grav-skeleton-helium-site 2/user/plugins/admin/themes/grav/templates/partials/dashboard-pages.html.twig");
+", "partials/dashboard-pages.html.twig", "/Users/emilkarlsson/Code/lundbergsab/user/plugins/admin/themes/grav/templates/partials/dashboard-pages.html.twig");
     }
 }

@@ -1,17 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1490725492,
-    'checksum' => '61518f7e76b56a56cd6c795a4554e0ba',
+    'timestamp' => 1490726834,
+    'checksum' => '8716a79f44958b8e04c07abc5b0cb645',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1490724714
+                'modified' => 1490726802
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1490724714
+                'modified' => 1490726801
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
@@ -19,7 +19,7 @@ return [
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
-                'modified' => 1490724714
+                'modified' => 1490726802
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
@@ -59,7 +59,7 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1490725492
+                'modified' => 1489110750
             ],
             'plugins/gantry5' => [
                 'file' => 'user/plugins/gantry5/gantry5.yaml',
@@ -756,7 +756,7 @@ return [
             ]
         ],
         'security' => [
-            'salt' => 'UwJenTkuCfb9RZ'
+            'salt' => '2MW9aeghEkDRG7'
         ]
     ]
 ];

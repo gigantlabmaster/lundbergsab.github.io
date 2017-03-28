@@ -16,7 +16,7 @@ class __TwigTemplate_ac7bbaece3931e70a049776591e66e3b6ffa9baa9f915cccb46d70eff2e
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        $this->loadTemplate("register.html.twig", "register.html.twig", 1, "63137499")->display(array_merge($context, array("title" => "Grav Register Admin User", "classes" => "wide")));
+        $this->loadTemplate("register.html.twig", "register.html.twig", 1, "2075266188")->display(array_merge($context, array("title" => "Grav Register Admin User", "classes" => "wide")));
     }
 
     public function getTemplateName()
@@ -72,13 +72,13 @@ class __TwigTemplate_ac7bbaece3931e70a049776591e66e3b6ffa9baa9f915cccb46d70eff2e
     {% endblock %}
 
 {% endembed %}
-", "register.html.twig", "/Users/emilkarlsson/Downloads/grav-skeleton-helium-site 2/user/plugins/admin/themes/grav/templates/register.html.twig");
+", "register.html.twig", "/Users/emilkarlsson/Code/lundbergsab/user/plugins/admin/themes/grav/templates/register.html.twig");
     }
 }
 
 
 /* register.html.twig */
-class __TwigTemplate_ac7bbaece3931e70a049776591e66e3b6ffa9baa9f915cccb46d70eff2e2dcd8_63137499 extends Twig_Template
+class __TwigTemplate_ac7bbaece3931e70a049776591e66e3b6ffa9baa9f915cccb46d70eff2e2dcd8_2075266188 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -237,6 +237,6 @@ class __TwigTemplate_ac7bbaece3931e70a049776591e66e3b6ffa9baa9f915cccb46d70eff2e
     {% endblock %}
 
 {% endembed %}
-", "register.html.twig", "/Users/emilkarlsson/Downloads/grav-skeleton-helium-site 2/user/plugins/admin/themes/grav/templates/register.html.twig");
+", "register.html.twig", "/Users/emilkarlsson/Code/lundbergsab/user/plugins/admin/themes/grav/templates/register.html.twig");
     }
 }
