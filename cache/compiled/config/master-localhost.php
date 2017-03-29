@@ -1,145 +1,62 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1490761801,
-    'checksum' => '49c1bfb4720bc5762683ebea8c39324a',
+    'timestamp' => 1490764244,
+    'checksum' => '4f5f7035294141682abab29f9951d1d2',
     'files' => [
         'user/config' => [
-            'media' => [
-                'file' => 'user/config/media.yaml',
-                'modified' => 1490761426
-            ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1490761425
+                'modified' => 1490764243
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1489410048
-            ],
-            'streams' => [
-                'file' => 'user/config/streams.yaml',
-                'modified' => 1490761426
+                'modified' => 1489410100
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1490761801
+                'modified' => 1489410100
             ]
         ],
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1489410048
+                'modified' => 1489410100
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1489410048
+                'modified' => 1489410100
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1489410048
+                'modified' => 1489410100
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1489410048
+                'modified' => 1489410100
             ]
         ],
         'user/plugins' => [
-            'plugins/admin' => [
-                'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1489410048
-            ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1489410048
+                'modified' => 1489410102
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1489410048
+                'modified' => 1489410104
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1489410048
-            ],
-            'plugins/gantry5' => [
-                'file' => 'user/plugins/gantry5/gantry5.yaml',
-                'modified' => 1489131962
-            ],
-            'plugins/login' => [
-                'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1489410048
-            ],
-            'plugins/markdown-notices' => [
-                'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
-                'modified' => 1489410048
-            ],
-            'plugins/pagination' => [
-                'file' => 'user/plugins/pagination/pagination.yaml',
-                'modified' => 1489110754
+                'modified' => 1489410104
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1489410048
-            ],
-            'plugins/simplesearch' => [
-                'file' => 'user/plugins/simplesearch/simplesearch.yaml',
-                'modified' => 1489110752
+                'modified' => 1489410104
             ]
         ]
     ],
     'data' => [
         'plugins' => [
-            'admin' => [
-                'enabled' => true,
-                'route' => '/admin',
-                'cache_enabled' => false,
-                'theme' => 'grav',
-                'logo_text' => '',
-                'body_classes' => '',
-                'sidebar' => [
-                    'activate' => 'tab',
-                    'hover_delay' => 100,
-                    'size' => 'auto'
-                ],
-                'dashboard' => [
-                    'days_of_stats' => 7
-                ],
-                'widgets' => [
-                    'dashboard-maintenance' => true,
-                    'dashboard-statistics' => true,
-                    'dashboard-notifications' => true,
-                    'dashboard-feed' => true,
-                    'dashboard-pages' => true
-                ],
-                'session' => [
-                    'timeout' => 1800
-                ],
-                'warnings' => [
-                    'delete_page' => true
-                ],
-                'edit_mode' => 'normal',
-                'show_github_msg' => true,
-                'google_fonts' => true,
-                'enable_auto_updates_check' => true,
-                'notifications' => [
-                    'feed' => true,
-                    'dashboard' => true,
-                    'plugins' => true,
-                    'themes' => true
-                ],
-                'popularity' => [
-                    'enabled' => true,
-                    'ignore' => [
-                        0 => '/test*',
-                        1 => '/modular'
-                    ],
-                    'history' => [
-                        'daily' => 30,
-                        'monthly' => 12,
-                        'visitors' => 20
-                    ]
-                ]
-            ],
             'email' => [
                 'enabled' => true,
                 'from' => NULL,
@@ -183,93 +100,9 @@ return [
                     ]
                 ]
             ],
-            'gantry5' => [
-                'enabled' => true,
-                'production' => true,
-                'use_media_folder' => false,
-                'offline' => false,
-                'offline_message' => NULL,
-                'asset_timestamps' => true,
-                'asset_timestamps_period' => 7,
-                'debug' => false,
-                'compile_yaml' => true,
-                'compile_twig' => true
-            ],
-            'login' => [
-                'enabled' => true,
-                'built_in_css' => true,
-                'route' => NULL,
-                'route_register' => false,
-                'route_activate' => '/activate_user',
-                'route_forgot' => '/forgot_password',
-                'route_reset' => '/reset_password',
-                'redirect_after_login' => NULL,
-                'parent_acl' => false,
-                'protect_protected_page_media' => false,
-                'user_registration' => [
-                    'enabled' => true,
-                    'fields' => [
-                        0 => 'username',
-                        1 => 'password',
-                        2 => 'email',
-                        3 => 'fullname',
-                        4 => 'title'
-                    ],
-                    'access' => [
-                        'site' => [
-                            'login' => 'true'
-                        ]
-                    ],
-                    'options' => [
-                        'validate_password1_and_password2' => true,
-                        'set_user_disabled' => false,
-                        'login_after_registration' => true,
-                        'send_activation_email' => false,
-                        'send_notification_email' => false,
-                        'send_welcome_email' => false
-                    ]
-                ],
-                'rememberme' => [
-                    'enabled' => true,
-                    'timeout' => 604800,
-                    'name' => 'grav-rememberme'
-                ]
-            ],
-            'markdown-notices' => [
-                'enabled' => true,
-                'built_in_css' => true,
-                'level_classes' => [
-                    0 => 'yellow',
-                    1 => 'red',
-                    2 => 'blue',
-                    3 => 'green'
-                ]
-            ],
-            'pagination' => [
-                'enabled' => true,
-                'built_in_css' => true,
-                'delta' => 0
-            ],
             'problems' => [
                 'enabled' => true,
                 'built_in_css' => true
-            ],
-            'simplesearch' => [
-                'enabled' => true,
-                'built_in_css' => true,
-                'display_button' => false,
-                'min_query_length' => 3,
-                'route' => '/search',
-                'template' => 'simplesearch_results',
-                'filters' => [
-                    'category' => 'blog'
-                ],
-                'filter_combinator' => 'and',
-                'ignore_accented_characters' => true,
-                'order' => [
-                    'by' => 'date',
-                    'dir' => 'desc'
-                ]
             ]
         ],
         'media' => [
@@ -554,6 +387,70 @@ return [
             'routes' => NULL,
             'blog' => [
                 'route' => '/blog'
+            ],
+            'email' => 'your-email@domain.com',
+            'description' => 'Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.',
+            'links' => [
+                0 => [
+                    'title' => 'Services',
+                    'url' => '#services'
+                ],
+                1 => [
+                    'title' => 'Portfolio',
+                    'url' => '#portfolio'
+                ],
+                2 => [
+                    'title' => 'About',
+                    'url' => '#about'
+                ],
+                3 => [
+                    'title' => 'Team',
+                    'url' => '#team'
+                ],
+                4 => [
+                    'title' => 'Contact',
+                    'url' => '#contact'
+                ]
+            ],
+            'social' => [
+                0 => [
+                    'title' => 'twitter',
+                    'url' => 'http://twitter.com/jekyllrb'
+                ],
+                1 => [
+                    'title' => 'facebook',
+                    'url' => NULL
+                ],
+                2 => [
+                    'title' => 'stack-overflow',
+                    'url' => 'http://stackoverflow.com/questions/tagged/jekyll'
+                ],
+                3 => [
+                    'title' => 'bitbucket',
+                    'url' => 'http://bitbucket.org/jekyll'
+                ],
+                4 => [
+                    'title' => 'github',
+                    'url' => 'http://github.com/jekyll'
+                ]
+            ],
+            'address' => [
+                0 => [
+                    'line' => '3481 Melrose Place'
+                ],
+                1 => [
+                    'line' => 'Beverly Hills, CA 90210'
+                ]
+            ],
+            'quicklinks' => [
+                0 => [
+                    'title' => 'Privacy Policy',
+                    'url' => '#'
+                ],
+                1 => [
+                    'title' => 'Terms of Use',
+                    'url' => '#'
+                ]
             ]
         ],
         'streams' => [
@@ -604,7 +501,7 @@ return [
                 'hide_in_urls' => false
             ],
             'pages' => [
-                'theme' => 'g5_helium',
+                'theme' => 'agency',
                 'order' => [
                     'by' => 'default',
                     'dir' => 'asc'
@@ -629,7 +526,7 @@ return [
                     'twig' => true
                 ],
                 'markdown' => [
-                    'extra' => false,
+                    'extra' => true,
                     'auto_line_breaks' => false,
                     'auto_url_links' => false,
                     'escape_markup' => false,
@@ -673,7 +570,7 @@ return [
                 ]
             ],
             'cache' => [
-                'enabled' => true,
+                'enabled' => false,
                 'check' => [
                     'method' => 'file'
                 ],
@@ -713,7 +610,7 @@ return [
                 ]
             ],
             'errors' => [
-                'display' => true,
+                'display' => 0,
                 'log' => true
             ],
             'debugger' => [
@@ -757,7 +654,7 @@ return [
             ]
         ],
         'security' => [
-            'salt' => '1kM96Ye4CPxrso'
+            'salt' => 'i4DuPYO7q8CkEs'
         ]
     ]
 ];

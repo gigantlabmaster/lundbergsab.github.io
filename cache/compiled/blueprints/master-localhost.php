@@ -1,73 +1,43 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1490761801,
-    'checksum' => '99a514557ef036de688bab07298fd910',
+    'timestamp' => 1490764244,
+    'checksum' => '5d24c241b0ab8d6c69402c3ddbdce940',
     'files' => [
-        'user/plugins/admin/blueprints/config' => [
-            'media' => [
-                'file' => 'user/plugins/admin/blueprints/config/media.yaml',
-                'modified' => 1489410048
-            ]
-        ],
         'system/blueprints/config' => [
             'media' => [
                 'file' => 'system/blueprints/config/media.yaml',
-                'modified' => 1489410048
+                'modified' => 1489410100
             ],
             'site' => [
                 'file' => 'system/blueprints/config/site.yaml',
-                'modified' => 1489410048
+                'modified' => 1489410100
             ],
             'streams' => [
                 'file' => 'system/blueprints/config/streams.yaml',
-                'modified' => 1489410048
+                'modified' => 1489410100
             ],
             'system' => [
                 'file' => 'system/blueprints/config/system.yaml',
-                'modified' => 1489410048
+                'modified' => 1489410100
             ]
         ],
         'user/plugins' => [
-            'plugins/admin' => [
-                'file' => 'user/plugins/admin/blueprints.yaml',
-                'modified' => 1489410048
-            ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/blueprints.yaml',
-                'modified' => 1489410048
+                'modified' => 1489410102
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/blueprints.yaml',
-                'modified' => 1489410048
+                'modified' => 1489410104
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/blueprints.yaml',
-                'modified' => 1489410048
-            ],
-            'plugins/gantry5' => [
-                'file' => 'user/plugins/gantry5/blueprints.yaml',
-                'modified' => 1489131968
-            ],
-            'plugins/login' => [
-                'file' => 'user/plugins/login/blueprints.yaml',
-                'modified' => 1489410048
-            ],
-            'plugins/markdown-notices' => [
-                'file' => 'user/plugins/markdown-notices/blueprints.yaml',
-                'modified' => 1489410048
-            ],
-            'plugins/pagination' => [
-                'file' => 'user/plugins/pagination/blueprints.yaml',
-                'modified' => 1489110754
+                'modified' => 1489410104
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/blueprints.yaml',
-                'modified' => 1489410048
-            ],
-            'plugins/simplesearch' => [
-                'file' => 'user/plugins/simplesearch/blueprints.yaml',
-                'modified' => 1489110752
+                'modified' => 1489410104
             ]
         ]
     ],
@@ -79,50 +49,6 @@ return [
                 ],
                 'type' => '_root',
                 'form_field' => false
-            ],
-            'media.types' => [
-                'name' => 'media.types',
-                'type' => 'list',
-                'label' => 'PLUGIN_ADMIN.MEDIA_TYPES',
-                'style' => 'vertical',
-                'key' => 'extension',
-                'controls' => 'both',
-                'collapsed' => true,
-                'validation' => 'loose',
-                'array' => true
-            ],
-            'media.types.*' => [
-                'type' => '_parent',
-                'name' => 'media.types.*',
-                'form_field' => false
-            ],
-            'media.types.*.type' => [
-                'type' => 'text',
-                'label' => 'PLUGIN_ADMIN.TYPE',
-                'name' => 'media.types.*.type',
-                'validation' => 'loose'
-            ],
-            'media.types.*.thumb' => [
-                'type' => 'text',
-                'label' => 'PLUGIN_ADMIN.THUMB',
-                'name' => 'media.types.*.thumb',
-                'validation' => 'loose'
-            ],
-            'media.types.*.mime' => [
-                'type' => 'text',
-                'label' => 'PLUGIN_ADMIN.MIME_TYPE',
-                'name' => 'media.types.*.mime',
-                'validation' => 'loose'
-            ],
-            'media.types.*.image' => [
-                'type' => 'textarea',
-                'yaml' => true,
-                'label' => 'PLUGIN_ADMIN.IMAGE_OPTIONS',
-                'validate' => [
-                    'type' => 'yaml'
-                ],
-                'name' => 'media.types.*.image',
-                'validation' => 'loose'
             ],
             'site' => [
                 'form' => [
@@ -178,10 +104,17 @@ return [
                 'name' => 'site.taxonomies',
                 'validation' => 'loose'
             ],
+            'site.content' => [
+                'type' => 'section',
+                'underline' => true,
+                'name' => 'site.content',
+                'validation' => 'loose'
+            ],
             'site.summary' => [
-                'type' => '_parent',
+                'type' => 'section',
+                'underline' => true,
                 'name' => 'site.summary',
-                'form_field' => false
+                'validation' => 'loose'
             ],
             'site.summary.enabled' => [
                 'type' => 'toggle',
@@ -230,8 +163,8 @@ return [
                 'validation' => 'loose'
             ],
             'site.metadata' => [
-                'type' => 'array',
-                'label' => 'PLUGIN_ADMIN.METADATA',
+                'type' => 'section',
+                'underline' => true,
                 'name' => 'site.metadata',
                 'validation' => 'loose'
             ],
@@ -242,8 +175,8 @@ return [
                 'validation' => 'loose'
             ],
             'site.routes' => [
-                'type' => 'array',
-                'label' => 'PLUGIN_ADMIN.CUSTOM_ROUTES',
+                'type' => 'section',
+                'underline' => true,
                 'name' => 'site.routes',
                 'validation' => 'loose'
             ],
@@ -635,10 +568,17 @@ return [
                 'name' => 'system.pages.frontmatter.ignore_fields',
                 'validation' => 'loose'
             ],
+            'system.content' => [
+                'type' => 'section',
+                'underline' => true,
+                'name' => 'system.content',
+                'validation' => 'loose'
+            ],
             'system.languages' => [
-                'type' => '_parent',
+                'type' => 'section',
+                'underline' => true,
                 'name' => 'system.languages',
-                'form_field' => false
+                'validation' => 'loose'
             ],
             'system.languages.supported' => [
                 'type' => 'selectize',
@@ -789,6 +729,12 @@ return [
                 'name' => 'system.pages.vary_accept_encoding',
                 'validation' => 'loose'
             ],
+            'system.http_headers' => [
+                'type' => 'section',
+                'underline' => true,
+                'name' => 'system.http_headers',
+                'validation' => 'loose'
+            ],
             'system.pages.markdown' => [
                 'type' => '_parent',
                 'name' => 'system.pages.markdown',
@@ -848,6 +794,12 @@ return [
                     'type' => 'bool'
                 ],
                 'name' => 'system.pages.markdown.escape_markup',
+                'validation' => 'loose'
+            ],
+            'system.markdown' => [
+                'type' => 'section',
+                'underline' => true,
+                'name' => 'system.markdown',
                 'validation' => 'loose'
             ],
             'system.cache' => [
@@ -1031,10 +983,17 @@ return [
                 'name' => 'system.cache.redis.port',
                 'validation' => 'loose'
             ],
+            'system.caching' => [
+                'type' => 'section',
+                'underline' => true,
+                'name' => 'system.caching',
+                'validation' => 'loose'
+            ],
             'system.twig' => [
-                'type' => '_parent',
+                'type' => 'section',
+                'underline' => true,
                 'name' => 'system.twig',
-                'form_field' => false
+                'validation' => 'loose'
             ],
             'system.twig.cache' => [
                 'type' => 'toggle',
@@ -1107,9 +1066,10 @@ return [
                 'validation' => 'loose'
             ],
             'system.assets' => [
-                'type' => '_parent',
+                'type' => 'section',
+                'underline' => true,
                 'name' => 'system.assets',
-                'form_field' => false
+                'validation' => 'loose'
             ],
             'system.assets.css_pipeline' => [
                 'type' => 'toggle',
@@ -1272,9 +1232,10 @@ return [
                 'validation' => 'loose'
             ],
             'system.errors' => [
-                'type' => '_parent',
+                'type' => 'section',
+                'underline' => true,
                 'name' => 'system.errors',
-                'form_field' => false
+                'validation' => 'loose'
             ],
             'system.errors.display' => [
                 'type' => 'select',
@@ -1304,9 +1265,10 @@ return [
                 'validation' => 'loose'
             ],
             'system.debugger' => [
-                'type' => '_parent',
+                'type' => 'section',
+                'underline' => true,
                 'name' => 'system.debugger',
-                'form_field' => false
+                'validation' => 'loose'
             ],
             'system.debugger.enabled' => [
                 'type' => 'toggle',
@@ -1414,9 +1376,10 @@ return [
                 'validation' => 'loose'
             ],
             'system.media' => [
-                'type' => '_parent',
+                'type' => 'section',
+                'underline' => true,
                 'name' => 'system.media',
-                'form_field' => false
+                'validation' => 'loose'
             ],
             'system.media.upload_limit' => [
                 'type' => 'text',
@@ -1466,9 +1429,10 @@ return [
                 'validation' => 'loose'
             ],
             'system.session' => [
-                'type' => '_parent',
+                'type' => 'section',
+                'underline' => true,
                 'name' => 'system.session',
-                'form_field' => false
+                'validation' => 'loose'
             ],
             'system.session.enabled' => [
                 'type' => 'hidden',
@@ -1681,7 +1645,13 @@ return [
                 'name' => 'system.custom_base_url',
                 'validation' => 'loose'
             ],
-            'plugins.admin' => [
+            'system.advanced' => [
+                'type' => 'section',
+                'underline' => true,
+                'name' => 'system.advanced',
+                'validation' => 'loose'
+            ],
+            'plugins.email' => [
                 'form' => [
                     'validation' => 'loose'
                 ],
@@ -1691,416 +1661,6 @@ return [
             'plugins' => [
                 'type' => '_parent',
                 'name' => 'plugins',
-                'form_field' => false
-            ],
-            'plugins.admin.enabled' => [
-                'type' => 'hidden',
-                'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.admin.enabled',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.cache_enabled' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_ADMIN.ADMIN_CACHING',
-                'highlight' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.YES',
-                    0 => 'PLUGIN_ADMIN.NO'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.admin.cache_enabled',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.route' => [
-                'type' => 'text',
-                'label' => 'Administrator path',
-                'size' => 'medium',
-                'name' => 'plugins.admin.route',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.logo_text' => [
-                'type' => 'text',
-                'label' => 'Logo text',
-                'size' => 'medium',
-                'name' => 'plugins.admin.logo_text',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.body_classes' => [
-                'type' => 'text',
-                'label' => 'Body classes',
-                'size' => 'medium',
-                'name' => 'plugins.admin.body_classes',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.sidebar' => [
-                'type' => '_parent',
-                'name' => 'plugins.admin.sidebar',
-                'form_field' => false
-            ],
-            'plugins.admin.sidebar.activate' => [
-                'type' => 'select',
-                'label' => 'Sidebar Activation',
-                'size' => 'small',
-                'default' => 'tab',
-                'options' => [
-                    'tab' => 'Tab',
-                    'hover' => 'Hover'
-                ],
-                'name' => 'plugins.admin.sidebar.activate',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.sidebar.hover_delay' => [
-                'type' => 'text',
-                'size' => 'x-small',
-                'append' => 'millseconds',
-                'label' => 'Hover delay',
-                'default' => 500,
-                'validate' => [
-                    'type' => 'number',
-                    'min' => 1
-                ],
-                'name' => 'plugins.admin.sidebar.hover_delay',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.sidebar.size' => [
-                'type' => 'select',
-                'label' => 'Sidebar Size',
-                'size' => 'medium',
-                'default' => 'auto',
-                'options' => [
-                    'auto' => 'Automatic width',
-                    'small' => 'Small width'
-                ],
-                'name' => 'plugins.admin.sidebar.size',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.theme' => [
-                'type' => 'hidden',
-                'label' => 'Theme',
-                'default' => 'grav',
-                'name' => 'plugins.admin.theme',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.edit_mode' => [
-                'type' => 'select',
-                'label' => 'Edit mode',
-                'size' => 'small',
-                'default' => 'normal',
-                'options' => [
-                    'normal' => 'Normal',
-                    'expert' => 'Expert'
-                ],
-                'name' => 'plugins.admin.edit_mode',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.google_fonts' => [
-                'type' => 'toggle',
-                'label' => 'Use Google Fonts',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.admin.google_fonts',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.show_beta_msg' => [
-                'type' => 'hidden',
-                'name' => 'plugins.admin.show_beta_msg',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.show_github_msg' => [
-                'type' => 'toggle',
-                'label' => 'Show GitHub Link',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.admin.show_github_msg',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.enable_auto_updates_check' => [
-                'type' => 'toggle',
-                'label' => 'Automatically check for updates',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.admin.enable_auto_updates_check',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.session' => [
-                'type' => '_parent',
-                'name' => 'plugins.admin.session',
-                'form_field' => false
-            ],
-            'plugins.admin.session.timeout' => [
-                'type' => 'text',
-                'size' => 'small',
-                'label' => 'Session Timeout',
-                'append' => 'secs',
-                'validate' => [
-                    'type' => 'number',
-                    'min' => 1
-                ],
-                'name' => 'plugins.admin.session.timeout',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.warnings' => [
-                'type' => '_parent',
-                'name' => 'plugins.admin.warnings',
-                'form_field' => false
-            ],
-            'plugins.admin.warnings.delete_page' => [
-                'type' => 'toggle',
-                'label' => 'Warn on page delete',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.admin.warnings.delete_page',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.widgets' => [
-                'type' => '_parent',
-                'name' => 'plugins.admin.widgets',
-                'form_field' => false
-            ],
-            'plugins.admin.widgets.dashboard-maintenance' => [
-                'type' => 'toggle',
-                'label' => 'Maintenance Widget',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.admin.widgets.dashboard-maintenance',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.widgets.dashboard-statistics' => [
-                'type' => 'toggle',
-                'label' => 'Statistics Widget',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.admin.widgets.dashboard-statistics',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.widgets.dashboard-notifications' => [
-                'type' => 'toggle',
-                'label' => 'Notifications Feed Widget',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.admin.widgets.dashboard-notifications',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.widgets.dashboard-feed' => [
-                'type' => 'toggle',
-                'label' => 'News Feed Widget',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.admin.widgets.dashboard-feed',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.widgets.dashboard-pages' => [
-                'type' => 'toggle',
-                'label' => 'Latest Pages Widget',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.admin.widgets.dashboard-pages',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.notifications' => [
-                'type' => '_parent',
-                'name' => 'plugins.admin.notifications',
-                'form_field' => false
-            ],
-            'plugins.admin.notifications.dashboard' => [
-                'type' => 'toggle',
-                'label' => 'Dashboard Notifications',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.admin.notifications.dashboard',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.notifications.plugins' => [
-                'type' => 'toggle',
-                'label' => 'Plugins Notifications',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.admin.notifications.plugins',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.notifications.themes' => [
-                'type' => 'toggle',
-                'label' => 'Themes Notifications',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.admin.notifications.themes',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.popularity' => [
-                'type' => '_parent',
-                'name' => 'plugins.admin.popularity',
-                'form_field' => false
-            ],
-            'plugins.admin.popularity.enabled' => [
-                'type' => 'toggle',
-                'label' => 'Visitor tracking',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.admin.popularity.enabled',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.dashboard' => [
-                'type' => '_parent',
-                'name' => 'plugins.admin.dashboard',
-                'form_field' => false
-            ],
-            'plugins.admin.dashboard.days_of_stats' => [
-                'type' => 'text',
-                'label' => 'Days of stats',
-                'append' => 'days',
-                'size' => 'x-small',
-                'default' => 7,
-                'validate' => [
-                    'type' => 'int'
-                ],
-                'name' => 'plugins.admin.dashboard.days_of_stats',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.popularity.ignore' => [
-                'type' => 'array',
-                'label' => 'Ignore',
-                'size' => 'large',
-                'default' => [
-                    0 => '/test*',
-                    1 => '/modular'
-                ],
-                'value_only' => true,
-                'name' => 'plugins.admin.popularity.ignore',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.popularity.history' => [
-                'type' => '_parent',
-                'name' => 'plugins.admin.popularity.history',
-                'form_field' => false
-            ],
-            'plugins.admin.popularity.history.daily' => [
-                'type' => 'hidden',
-                'label' => 'Daily history',
-                'default' => 30,
-                'name' => 'plugins.admin.popularity.history.daily',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.popularity.history.monthly' => [
-                'type' => 'hidden',
-                'label' => 'Monthly history',
-                'default' => 12,
-                'name' => 'plugins.admin.popularity.history.monthly',
-                'validation' => 'loose'
-            ],
-            'plugins.admin.popularity.history.visitors' => [
-                'type' => 'hidden',
-                'label' => 'Visitors history',
-                'default' => 20,
-                'name' => 'plugins.admin.popularity.history.visitors',
-                'validation' => 'loose'
-            ],
-            'plugins.email' => [
-                'form' => [
-                    'validation' => 'loose'
-                ],
-                'type' => '_root',
                 'form_field' => false
             ],
             'plugins.email.enabled' => [
@@ -2334,10 +1894,15 @@ return [
                 'name' => 'plugins.form.built_in_css',
                 'validation' => 'strict'
             ],
+            'plugins.form.general' => [
+                'type' => 'section',
+                'name' => 'plugins.form.general',
+                'validation' => 'strict'
+            ],
             'plugins.form.files' => [
-                'type' => '_parent',
+                'type' => 'section',
                 'name' => 'plugins.form.files',
-                'form_field' => false
+                'validation' => 'strict'
             ],
             'plugins.form.files.multiple' => [
                 'type' => 'toggle',
@@ -2376,9 +1941,9 @@ return [
                 'validation' => 'strict'
             ],
             'plugins.form.recaptcha' => [
-                'type' => '_parent',
+                'type' => 'section',
                 'name' => 'plugins.form.recaptcha',
-                'form_field' => false
+                'validation' => 'strict'
             ],
             'plugins.form.recaptcha.site_key' => [
                 'type' => 'text',
@@ -2392,543 +1957,6 @@ return [
                 'label' => 'PLUGIN_FORM.RECAPTCHA_SECRET_KEY',
                 'default' => '',
                 'name' => 'plugins.form.recaptcha.secret_key',
-                'validation' => 'strict'
-            ],
-            'plugins.gantry5' => [
-                'form' => [
-                    'validation' => 'loose'
-                ],
-                'type' => '_root',
-                'form_field' => false
-            ],
-            'plugins.gantry5.enabled' => [
-                'type' => 'toggle',
-                'label' => 'Plugin Status',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.gantry5.enabled',
-                'validation' => 'loose'
-            ],
-            'plugins.gantry5.production' => [
-                'type' => 'toggle',
-                'label' => 'Production Mode',
-                'description' => 'Production mode makes Gantry faster by more aggressive caching and ignoring changed files in the filesystem. Most changes made from admin should still be detected.',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.gantry5.production',
-                'validation' => 'loose'
-            ],
-            'plugins.gantry5.use_media_folder' => [
-                'type' => 'toggle',
-                'label' => 'Use Grav Images Folder',
-                'description' => 'By default Gantry media picker saves all files under the <strong>data://gantry5/themes/[theme]/images</strong> folder. If you want to save files into <strong>user://images</strong> folder instead, please select this option. Files in the old location can still be used, but are overridden by the files in the selected folder.',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.gantry5.use_media_folder',
-                'validation' => 'loose'
-            ],
-            'plugins.gantry5.offline' => [
-                'type' => 'toggle',
-                'label' => 'Offline',
-                'description' => 'Set site to maintenance mode. When site is offline, it\'s only visible for logged in users.',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.gantry5.offline',
-                'validation' => 'loose'
-            ],
-            'plugins.gantry5.offline_message' => [
-                'type' => 'textarea',
-                'label' => 'Offline Message',
-                'description' => 'Set your own offline message explaining why the site is offline. Field accepts Markdown and HTML.',
-                'name' => 'plugins.gantry5.offline_message',
-                'validation' => 'loose'
-            ],
-            'plugins.gantry5.asset_timestamps' => [
-                'type' => 'toggle',
-                'label' => 'Asset Timestamps',
-                'description' => 'Adds timestamps on changed asset files, like images, css and js. The option makes browser to get fresh assets without forcing reload on the page. NOTE: Timestamps are always enabled in development mode.',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.gantry5.asset_timestamps',
-                'validation' => 'loose'
-            ],
-            'plugins.gantry5.asset_timestamps_period' => [
-                'type' => 'text',
-                'label' => 'Timestamp Period',
-                'description' => 'Number of days which timestamp is kept after updating the file. Accepts also decimal numbers, eg. 0.5 = 12 hours. Set to 0 to add timestamps on every single asset file.',
-                'default' => 7,
-                'validate' => [
-                    'type' => 'float'
-                ],
-                'name' => 'plugins.gantry5.asset_timestamps_period',
-                'validation' => 'loose'
-            ],
-            'plugins.gantry5.debug' => [
-                'type' => 'toggle',
-                'label' => 'Debug Mode',
-                'description' => 'By enabling debugging mode, you will get more information what\'s going on inside Gantry.',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.gantry5.debug',
-                'validation' => 'loose'
-            ],
-            'plugins.gantry5.compile_yaml' => [
-                'type' => 'toggle',
-                'label' => 'Compile YAML',
-                'description' => 'Compile YAML configuration files into PHP, making page loads significantly faster.',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.gantry5.compile_yaml',
-                'validation' => 'loose'
-            ],
-            'plugins.gantry5.compile_twig' => [
-                'type' => 'toggle',
-                'label' => 'Compile Twig',
-                'description' => 'Compile Twig template files into PHP, making page loads significantly faster.',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.gantry5.compile_twig',
-                'validation' => 'loose'
-            ],
-            'plugins.gantry5._redirect' => [
-                'type' => 'hidden',
-                'name' => 'plugins.gantry5._redirect',
-                'validation' => 'loose'
-            ],
-            'plugins.login' => [
-                'form' => [
-                    'validation' => 'loose'
-                ],
-                'type' => '_root',
-                'form_field' => false
-            ],
-            'plugins.login.enabled' => [
-                'type' => 'hidden',
-                'label' => 'PLUGIN_LOGIN.PLUGIN_STATUS',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.login.enabled',
-                'validation' => 'loose'
-            ],
-            'plugins.login.built_in_css' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_LOGIN.BUILTIN_CSS',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.login.built_in_css',
-                'validation' => 'loose'
-            ],
-            'plugins.login.route' => [
-                'type' => 'text',
-                'size' => 'medium',
-                'label' => 'PLUGIN_LOGIN.ROUTE',
-                'name' => 'plugins.login.route',
-                'validation' => 'loose'
-            ],
-            'plugins.login.redirect_after_login' => [
-                'type' => 'text',
-                'label' => 'PLUGIN_LOGIN.REDIRECT_AFTER_LOGIN',
-                'name' => 'plugins.login.redirect_after_login',
-                'validation' => 'loose'
-            ],
-            'plugins.login.parent_acl' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_LOGIN.USE_PARENT_ACL_LABEL',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.login.parent_acl',
-                'validation' => 'loose'
-            ],
-            'plugins.login.protect_protected_page_media' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_LOGIN.PROTECT_PROTECTED_PAGE_MEDIA_LABEL',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.login.protect_protected_page_media',
-                'validation' => 'loose'
-            ],
-            'plugins.login.rememberme' => [
-                'type' => '_parent',
-                'name' => 'plugins.login.rememberme',
-                'form_field' => false
-            ],
-            'plugins.login.rememberme.enabled' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_ADMIN.ENABLED',
-                'highlight' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.YES',
-                    0 => 'PLUGIN_ADMIN.NO'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.login.rememberme.enabled',
-                'validation' => 'loose'
-            ],
-            'plugins.login.rememberme.timeout' => [
-                'type' => 'text',
-                'size' => 'small',
-                'default' => 604800,
-                'label' => 'PLUGIN_ADMIN.TIMEOUT',
-                'validate' => [
-                    'type' => 'number',
-                    'min' => 1
-                ],
-                'name' => 'plugins.login.rememberme.timeout',
-                'validation' => 'loose'
-            ],
-            'plugins.login.rememberme.name' => [
-                'type' => 'text',
-                'size' => 'small',
-                'label' => 'PLUGIN_ADMIN.NAME',
-                'name' => 'plugins.login.rememberme.name',
-                'validation' => 'loose'
-            ],
-            'plugins.login.user_registration' => [
-                'type' => '_parent',
-                'name' => 'plugins.login.user_registration',
-                'form_field' => false
-            ],
-            'plugins.login.user_registration.enabled' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_ADMIN.ENABLED',
-                'highlight' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.YES',
-                    0 => 'PLUGIN_ADMIN.NO'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.login.user_registration.enabled',
-                'validation' => 'loose'
-            ],
-            'plugins.login.route_register' => [
-                'type' => 'text',
-                'size' => 'medium',
-                'label' => 'PLUGIN_LOGIN.ROUTE_REGISTER',
-                'name' => 'plugins.login.route_register',
-                'validation' => 'loose'
-            ],
-            'plugins.login.user_registration.redirect_after_registration' => [
-                'type' => 'text',
-                'label' => 'PLUGIN_LOGIN.REDIRECT_AFTER_REGISTRATION',
-                'name' => 'plugins.login.user_registration.redirect_after_registration',
-                'validation' => 'loose'
-            ],
-            'plugins.login.user_registration.redirect_after_activation' => [
-                'type' => 'text',
-                'label' => 'PLUGIN_LOGIN.REDIRECT_AFTER_ACTIVATION',
-                'name' => 'plugins.login.user_registration.redirect_after_activation',
-                'validation' => 'loose'
-            ],
-            'plugins.login.user_registration.fields' => [
-                'type' => 'array',
-                'value_only' => true,
-                'label' => 'PLUGIN_LOGIN.REGISTRATION_FIELDS',
-                'name' => 'plugins.login.user_registration.fields',
-                'validation' => 'loose'
-            ],
-            'plugins.login.user_registration.default_values' => [
-                'type' => 'array',
-                'label' => 'PLUGIN_LOGIN.DEFAULT_VALUES',
-                'name' => 'plugins.login.user_registration.default_values',
-                'validation' => 'loose'
-            ],
-            'plugins.login.user_registration.groups' => [
-                'type' => 'selectize',
-                'size' => 'large',
-                'label' => 'PLUGIN_ADMIN.GROUPS',
-                '@data-options' => '\\Grav\\User\\Groups::groups',
-                'classes' => 'fancy',
-                'validate' => [
-                    'type' => 'commalist'
-                ],
-                'name' => 'plugins.login.user_registration.groups',
-                'validation' => 'loose'
-            ],
-            'plugins.login.user_registration.access' => [
-                'type' => '_parent',
-                'name' => 'plugins.login.user_registration.access',
-                'form_field' => false
-            ],
-            'plugins.login.user_registration.access.site' => [
-                'type' => 'array',
-                'label' => 'PLUGIN_ADMIN.SITE_ACCESS',
-                'multiple' => false,
-                'validate' => [
-                    'type' => 'array'
-                ],
-                'name' => 'plugins.login.user_registration.access.site',
-                'validation' => 'loose'
-            ],
-            'plugins.login.user_registration.options' => [
-                'type' => '_parent',
-                'name' => 'plugins.login.user_registration.options',
-                'form_field' => false
-            ],
-            'plugins.login.user_registration.options.validate_password1_and_password2' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_LOGIN.VALIDATE_PASSWORD1_AND_PASSWORD2',
-                'highlight' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.YES',
-                    0 => 'PLUGIN_ADMIN.NO'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.login.user_registration.options.validate_password1_and_password2',
-                'validation' => 'loose'
-            ],
-            'plugins.login.user_registration.options.set_user_disabled' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_LOGIN.SET_USER_DISABLED',
-                'highlight' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.YES',
-                    0 => 'PLUGIN_ADMIN.NO'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.login.user_registration.options.set_user_disabled',
-                'validation' => 'loose'
-            ],
-            'plugins.login.user_registration.options.login_after_registration' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_LOGIN.LOGIN_AFTER_REGISTRATION',
-                'highlight' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.YES',
-                    0 => 'PLUGIN_ADMIN.NO'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.login.user_registration.options.login_after_registration',
-                'validation' => 'loose'
-            ],
-            'plugins.login.user_registration.options.send_activation_email' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_LOGIN.SEND_ACTIVATION_EMAIL',
-                'highlight' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.YES',
-                    0 => 'PLUGIN_ADMIN.NO'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.login.user_registration.options.send_activation_email',
-                'validation' => 'loose'
-            ],
-            'plugins.login.user_registration.options.send_notification_email' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_LOGIN.SEND_NOTIFICATION_EMAIL',
-                'highlight' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.YES',
-                    0 => 'PLUGIN_ADMIN.NO'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.login.user_registration.options.send_notification_email',
-                'validation' => 'loose'
-            ],
-            'plugins.login.user_registration.options.send_welcome_email' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_LOGIN.SEND_WELCOME_EMAIL',
-                'highlight' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.YES',
-                    0 => 'PLUGIN_ADMIN.NO'
-                ],
-                'validate' => NULL,
-                'name' => 'plugins.login.user_registration.options.send_welcome_email',
-                'validation' => 'loose'
-            ],
-            'plugins.markdown-notices' => [
-                'form' => [
-                    'validation' => 'strict'
-                ],
-                'type' => '_root',
-                'form_field' => false
-            ],
-            'plugins.markdown-notices.enabled' => [
-                'type' => 'toggle',
-                'label' => 'Plugin status',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.markdown-notices.enabled',
-                'validation' => 'strict'
-            ],
-            'plugins.markdown-notices.built_in_css' => [
-                'type' => 'toggle',
-                'label' => 'Use built in CSS',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.markdown-notices.built_in_css',
-                'validation' => 'strict'
-            ],
-            'plugins.markdown-notices.level_classes' => [
-                'type' => 'selectize',
-                'size' => 'large',
-                'label' => 'Level classes',
-                'classes' => 'fancy',
-                'validate' => [
-                    'type' => 'commalist'
-                ],
-                'name' => 'plugins.markdown-notices.level_classes',
-                'validation' => 'strict'
-            ],
-            'plugins.pagination' => [
-                'form' => [
-                    'validation' => 'strict'
-                ],
-                'type' => '_root',
-                'form_field' => false
-            ],
-            'plugins.pagination.enabled' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.pagination.enabled',
-                'validation' => 'strict'
-            ],
-            'plugins.pagination.delta' => [
-                'type' => 'text',
-                'size' => 'x-small',
-                'label' => 'Delta',
-                'default' => 0,
-                'validate' => [
-                    'type' => 'number',
-                    'min' => 0
-                ],
-                'name' => 'plugins.pagination.delta',
-                'validation' => 'strict'
-            ],
-            'plugins.pagination.built_in_css' => [
-                'type' => 'toggle',
-                'label' => 'Use built in CSS',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.pagination.built_in_css',
                 'validation' => 'strict'
             ],
             'plugins.problems' => [
@@ -2967,175 +1995,15 @@ return [
                 ],
                 'name' => 'plugins.problems.built_in_css',
                 'validation' => 'strict'
-            ],
-            'plugins.simplesearch' => [
-                'form' => [
-                    'validation' => 'strict'
-                ],
-                'type' => '_root',
-                'form_field' => false
-            ],
-            'plugins.simplesearch.enabled' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.simplesearch.enabled',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.built_in_css' => [
-                'type' => 'toggle',
-                'label' => 'Use built in CSS',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.simplesearch.built_in_css',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.display_button' => [
-                'type' => 'toggle',
-                'label' => 'Display Search Button',
-                'highlight' => 0,
-                'default' => 0,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.simplesearch.display_button',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.ignore_accented_characters' => [
-                'type' => 'toggle',
-                'label' => 'Ignote accented characters',
-                'highlight' => 0,
-                'default' => 0,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.simplesearch.ignore_accented_characters',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.min_query_length' => [
-                'type' => 'text',
-                'size' => 'x-small',
-                'label' => 'Minimum query length',
-                'validate' => [
-                    'type' => 'number',
-                    'min' => 0
-                ],
-                'name' => 'plugins.simplesearch.min_query_length',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.route' => [
-                'type' => 'text',
-                'size' => 'medium',
-                'label' => 'Route',
-                'default' => '/random',
-                'name' => 'plugins.simplesearch.route',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.template' => [
-                'type' => 'text',
-                'size' => 'medium',
-                'label' => 'Template',
-                'default' => 'simplesearch_results',
-                'name' => 'plugins.simplesearch.template',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.filters' => [
-                'type' => '_parent',
-                'name' => 'plugins.simplesearch.filters',
-                'form_field' => false
-            ],
-            'plugins.simplesearch.filters.category' => [
-                'type' => 'selectize',
-                'label' => 'Category filter',
-                'validate' => [
-                    'type' => 'commalist'
-                ],
-                'name' => 'plugins.simplesearch.filters.category',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.filter_combinator' => [
-                'type' => 'select',
-                'size' => 'medium',
-                'classes' => 'fancy',
-                'label' => 'Filter Combinator',
-                'default' => 'and',
-                'options' => [
-                    'and' => 'And - Boolean &&',
-                    'or' => 'Or - Boolean ||'
-                ],
-                'name' => 'plugins.simplesearch.filter_combinator',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.order' => [
-                'type' => '_parent',
-                'name' => 'plugins.simplesearch.order',
-                'form_field' => false
-            ],
-            'plugins.simplesearch.order.by' => [
-                'type' => 'select',
-                'size' => 'long',
-                'classes' => 'fancy',
-                'label' => 'PLUGIN_ADMIN.DEFAULT_ORDERING',
-                'options' => [
-                    'default' => 'PLUGIN_ADMIN.DEFAULT_ORDERING_DEFAULT',
-                    'folder' => 'PLUGIN_ADMIN.DEFAULT_ORDERING_FOLDER',
-                    'title' => 'PLUGIN_ADMIN.DEFAULT_ORDERING_TITLE',
-                    'date' => 'PLUGIN_ADMIN.DEFAULT_ORDERING_DATE'
-                ],
-                'name' => 'plugins.simplesearch.order.by',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.order.dir' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_ADMIN.DEFAULT_ORDER_DIRECTION',
-                'highlight' => 'asc',
-                'default' => 'desc',
-                'options' => [
-                    'asc' => 'PLUGIN_ADMIN.ASCENDING',
-                    'desc' => 'PLUGIN_ADMIN.DESCENDING'
-                ],
-                'name' => 'plugins.simplesearch.order.dir',
-                'validation' => 'strict'
             ]
         ],
         'rules' => [
             
         ],
         'nested' => [
-            'media' => [
-                'types' => [
-                    '*' => [
-                        'type' => 'media.types.*.type',
-                        'thumb' => 'media.types.*.thumb',
-                        'mime' => 'media.types.*.mime',
-                        'image' => 'media.types.*.image'
-                    ]
-                ]
-            ],
+            'media' => 'media',
             'site' => [
+                'content' => 'site.content',
                 'title' => 'site.title',
                 'default_lang' => 'site.default_lang',
                 'author' => [
@@ -3150,8 +2018,8 @@ return [
                     'delimiter' => 'site.summary.delimiter'
                 ],
                 'metadata' => 'site.metadata',
-                'redirects' => 'site.redirects',
-                'routes' => 'site.routes'
+                'routes' => 'site.routes',
+                'redirects' => 'site.redirects'
             ],
             'streams' => [
                 'schemes' => [
@@ -3159,6 +2027,7 @@ return [
                 ]
             ],
             'system' => [
+                'content' => 'system.content',
                 'home' => [
                     'alias' => 'system.home.alias',
                     'hide_in_urls' => 'system.home.hide_in_urls'
@@ -3215,6 +2084,9 @@ return [
                     'http_accept_language' => 'system.languages.http_accept_language',
                     'override_locale' => 'system.languages.override_locale'
                 ],
+                'http_headers' => 'system.http_headers',
+                'markdown' => 'system.markdown',
+                'caching' => 'system.caching',
                 'cache' => [
                     'enabled' => 'system.cache.enabled',
                     'check' => [
@@ -3271,18 +2143,18 @@ return [
                         'close_connection' => 'system.debugger.shutdown.close_connection'
                     ]
                 ],
+                'media' => [
+                    'upload_limit' => 'system.media.upload_limit',
+                    'enable_media_timestamp' => 'system.media.enable_media_timestamp',
+                    'allowed_fallback_types' => 'system.media.allowed_fallback_types',
+                    'unsupported_inline_types' => 'system.media.unsupported_inline_types'
+                ],
                 'images' => [
                     'default_image_quality' => 'system.images.default_image_quality',
                     'cache_all' => 'system.images.cache_all',
                     'cache_perms' => 'system.images.cache_perms',
                     'debug' => 'system.images.debug',
                     'auto_fix_orientation' => 'system.images.auto_fix_orientation'
-                ],
-                'media' => [
-                    'upload_limit' => 'system.media.upload_limit',
-                    'enable_media_timestamp' => 'system.media.enable_media_timestamp',
-                    'allowed_fallback_types' => 'system.media.allowed_fallback_types',
-                    'unsupported_inline_types' => 'system.media.unsupported_inline_types'
                 ],
                 'session' => [
                     'enabled' => 'system.session.enabled',
@@ -3293,6 +2165,7 @@ return [
                     'path' => 'system.session.path',
                     'split' => 'system.session.split'
                 ],
+                'advanced' => 'system.advanced',
                 'gpm' => [
                     'releases' => 'system.gpm.releases',
                     'proxy_url' => 'system.gpm.proxy_url',
@@ -3307,54 +2180,6 @@ return [
                 'custom_base_url' => 'system.custom_base_url'
             ],
             'plugins' => [
-                'admin' => [
-                    'enabled' => 'plugins.admin.enabled',
-                    'cache_enabled' => 'plugins.admin.cache_enabled',
-                    'route' => 'plugins.admin.route',
-                    'logo_text' => 'plugins.admin.logo_text',
-                    'body_classes' => 'plugins.admin.body_classes',
-                    'sidebar' => [
-                        'activate' => 'plugins.admin.sidebar.activate',
-                        'hover_delay' => 'plugins.admin.sidebar.hover_delay',
-                        'size' => 'plugins.admin.sidebar.size'
-                    ],
-                    'theme' => 'plugins.admin.theme',
-                    'edit_mode' => 'plugins.admin.edit_mode',
-                    'google_fonts' => 'plugins.admin.google_fonts',
-                    'show_beta_msg' => 'plugins.admin.show_beta_msg',
-                    'show_github_msg' => 'plugins.admin.show_github_msg',
-                    'enable_auto_updates_check' => 'plugins.admin.enable_auto_updates_check',
-                    'session' => [
-                        'timeout' => 'plugins.admin.session.timeout'
-                    ],
-                    'warnings' => [
-                        'delete_page' => 'plugins.admin.warnings.delete_page'
-                    ],
-                    'widgets' => [
-                        'dashboard-maintenance' => 'plugins.admin.widgets.dashboard-maintenance',
-                        'dashboard-statistics' => 'plugins.admin.widgets.dashboard-statistics',
-                        'dashboard-notifications' => 'plugins.admin.widgets.dashboard-notifications',
-                        'dashboard-feed' => 'plugins.admin.widgets.dashboard-feed',
-                        'dashboard-pages' => 'plugins.admin.widgets.dashboard-pages'
-                    ],
-                    'notifications' => [
-                        'dashboard' => 'plugins.admin.notifications.dashboard',
-                        'plugins' => 'plugins.admin.notifications.plugins',
-                        'themes' => 'plugins.admin.notifications.themes'
-                    ],
-                    'popularity' => [
-                        'enabled' => 'plugins.admin.popularity.enabled',
-                        'ignore' => 'plugins.admin.popularity.ignore',
-                        'history' => [
-                            'daily' => 'plugins.admin.popularity.history.daily',
-                            'monthly' => 'plugins.admin.popularity.history.monthly',
-                            'visitors' => 'plugins.admin.popularity.history.visitors'
-                        ]
-                    ],
-                    'dashboard' => [
-                        'days_of_stats' => 'plugins.admin.dashboard.days_of_stats'
-                    ]
-                ],
                 'email' => [
                     'enabled' => 'plugins.email.enabled',
                     'mailer' => [
@@ -3385,6 +2210,7 @@ return [
                 ],
                 'form' => [
                     'enabled' => 'plugins.form.enabled',
+                    'general' => 'plugins.form.general',
                     'built_in_css' => 'plugins.form.built_in_css',
                     'files' => [
                         'multiple' => 'plugins.form.files.multiple',
@@ -3396,82 +2222,9 @@ return [
                         'secret_key' => 'plugins.form.recaptcha.secret_key'
                     ]
                 ],
-                'gantry5' => [
-                    'enabled' => 'plugins.gantry5.enabled',
-                    'production' => 'plugins.gantry5.production',
-                    'use_media_folder' => 'plugins.gantry5.use_media_folder',
-                    'offline' => 'plugins.gantry5.offline',
-                    'offline_message' => 'plugins.gantry5.offline_message',
-                    'asset_timestamps' => 'plugins.gantry5.asset_timestamps',
-                    'asset_timestamps_period' => 'plugins.gantry5.asset_timestamps_period',
-                    'debug' => 'plugins.gantry5.debug',
-                    'compile_yaml' => 'plugins.gantry5.compile_yaml',
-                    'compile_twig' => 'plugins.gantry5.compile_twig',
-                    '_redirect' => 'plugins.gantry5._redirect'
-                ],
-                'login' => [
-                    'enabled' => 'plugins.login.enabled',
-                    'built_in_css' => 'plugins.login.built_in_css',
-                    'route' => 'plugins.login.route',
-                    'redirect_after_login' => 'plugins.login.redirect_after_login',
-                    'parent_acl' => 'plugins.login.parent_acl',
-                    'protect_protected_page_media' => 'plugins.login.protect_protected_page_media',
-                    'rememberme' => [
-                        'enabled' => 'plugins.login.rememberme.enabled',
-                        'timeout' => 'plugins.login.rememberme.timeout',
-                        'name' => 'plugins.login.rememberme.name'
-                    ],
-                    'user_registration' => [
-                        'enabled' => 'plugins.login.user_registration.enabled',
-                        'redirect_after_registration' => 'plugins.login.user_registration.redirect_after_registration',
-                        'redirect_after_activation' => 'plugins.login.user_registration.redirect_after_activation',
-                        'fields' => 'plugins.login.user_registration.fields',
-                        'default_values' => 'plugins.login.user_registration.default_values',
-                        'groups' => 'plugins.login.user_registration.groups',
-                        'access' => [
-                            'site' => 'plugins.login.user_registration.access.site'
-                        ],
-                        'options' => [
-                            'validate_password1_and_password2' => 'plugins.login.user_registration.options.validate_password1_and_password2',
-                            'set_user_disabled' => 'plugins.login.user_registration.options.set_user_disabled',
-                            'login_after_registration' => 'plugins.login.user_registration.options.login_after_registration',
-                            'send_activation_email' => 'plugins.login.user_registration.options.send_activation_email',
-                            'send_notification_email' => 'plugins.login.user_registration.options.send_notification_email',
-                            'send_welcome_email' => 'plugins.login.user_registration.options.send_welcome_email'
-                        ]
-                    ],
-                    'route_register' => 'plugins.login.route_register'
-                ],
-                'markdown-notices' => [
-                    'enabled' => 'plugins.markdown-notices.enabled',
-                    'built_in_css' => 'plugins.markdown-notices.built_in_css',
-                    'level_classes' => 'plugins.markdown-notices.level_classes'
-                ],
-                'pagination' => [
-                    'enabled' => 'plugins.pagination.enabled',
-                    'delta' => 'plugins.pagination.delta',
-                    'built_in_css' => 'plugins.pagination.built_in_css'
-                ],
                 'problems' => [
                     'enabled' => 'plugins.problems.enabled',
                     'built_in_css' => 'plugins.problems.built_in_css'
-                ],
-                'simplesearch' => [
-                    'enabled' => 'plugins.simplesearch.enabled',
-                    'built_in_css' => 'plugins.simplesearch.built_in_css',
-                    'display_button' => 'plugins.simplesearch.display_button',
-                    'ignore_accented_characters' => 'plugins.simplesearch.ignore_accented_characters',
-                    'min_query_length' => 'plugins.simplesearch.min_query_length',
-                    'route' => 'plugins.simplesearch.route',
-                    'template' => 'plugins.simplesearch.template',
-                    'filters' => [
-                        'category' => 'plugins.simplesearch.filters.category'
-                    ],
-                    'filter_combinator' => 'plugins.simplesearch.filter_combinator',
-                    'order' => [
-                        'by' => 'plugins.simplesearch.order.by',
-                        'dir' => 'plugins.simplesearch.order.dir'
-                    ]
                 ]
             ]
         ],
@@ -3486,12 +2239,6 @@ return [
                 'options' => [
                     'action' => 'data',
                     'params' => '\\Grav\\Common\\Utils::dateFormats'
-                ]
-            ],
-            'plugins.login.user_registration.groups' => [
-                'options' => [
-                    'action' => 'data',
-                    'params' => '\\Grav\\User\\Groups::groups'
                 ]
             ]
         ],

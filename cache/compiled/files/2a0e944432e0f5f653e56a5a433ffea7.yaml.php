@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/emilkarlsson/Code/lundbergsab/system/languages/vi.yaml',
-    'modified' => 1489410048,
+    'modified' => 1489410100,
     'data' => [
         'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s
