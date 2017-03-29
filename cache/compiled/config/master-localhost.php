@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1490761429,
-    'checksum' => 'fab4ddd8955ec27ca104239cbd2b3405',
+    'timestamp' => 1490761801,
+    'checksum' => '49c1bfb4720bc5762683ebea8c39324a',
     'files' => [
         'user/config' => [
             'media' => [
@@ -23,7 +23,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1489410048
+                'modified' => 1490761801
             ]
         ],
         'system/config' => [
@@ -61,6 +61,10 @@ return [
                 'file' => 'user/plugins/form/form.yaml',
                 'modified' => 1489410048
             ],
+            'plugins/gantry5' => [
+                'file' => 'user/plugins/gantry5/gantry5.yaml',
+                'modified' => 1489131962
+            ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
                 'modified' => 1489410048
@@ -69,9 +73,17 @@ return [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
                 'modified' => 1489410048
             ],
+            'plugins/pagination' => [
+                'file' => 'user/plugins/pagination/pagination.yaml',
+                'modified' => 1489110754
+            ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
                 'modified' => 1489410048
+            ],
+            'plugins/simplesearch' => [
+                'file' => 'user/plugins/simplesearch/simplesearch.yaml',
+                'modified' => 1489110752
             ]
         ]
     ],
@@ -171,6 +183,18 @@ return [
                     ]
                 ]
             ],
+            'gantry5' => [
+                'enabled' => true,
+                'production' => true,
+                'use_media_folder' => false,
+                'offline' => false,
+                'offline_message' => NULL,
+                'asset_timestamps' => true,
+                'asset_timestamps_period' => 7,
+                'debug' => false,
+                'compile_yaml' => true,
+                'compile_twig' => true
+            ],
             'login' => [
                 'enabled' => true,
                 'built_in_css' => true,
@@ -221,9 +245,31 @@ return [
                     3 => 'green'
                 ]
             ],
+            'pagination' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'delta' => 0
+            ],
             'problems' => [
                 'enabled' => true,
                 'built_in_css' => true
+            ],
+            'simplesearch' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'display_button' => false,
+                'min_query_length' => 3,
+                'route' => '/search',
+                'template' => 'simplesearch_results',
+                'filters' => [
+                    'category' => 'blog'
+                ],
+                'filter_combinator' => 'and',
+                'ignore_accented_characters' => true,
+                'order' => [
+                    'by' => 'date',
+                    'dir' => 'desc'
+                ]
             ]
         ],
         'media' => [
@@ -558,7 +604,7 @@ return [
                 'hide_in_urls' => false
             ],
             'pages' => [
-                'theme' => 'antimatter',
+                'theme' => 'g5_helium',
                 'order' => [
                     'by' => 'default',
                     'dir' => 'asc'
