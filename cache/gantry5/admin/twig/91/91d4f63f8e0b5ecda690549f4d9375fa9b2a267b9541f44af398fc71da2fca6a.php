@@ -21,7 +21,7 @@ class __TwigTemplate_9656064bc015162561584fa79bfd6bce263f5f811f87b123dea72514157
         echo "
 ";
         // line 3
-        if ((is_string($__internal_3511d0ad186420ce95ec789c62fb4733a8f83d5a06c2054d8230a9887585fca2 = (isset($context["php_version"]) ? $context["php_version"] : null)) && is_string($__internal_7059412d6357edb6e99e6e2caa3351ec01774edc881d4fdc461e01f5d3111d27 = "5.4") && ('' === $__internal_7059412d6357edb6e99e6e2caa3351ec01774edc881d4fdc461e01f5d3111d27 || 0 === strpos($__internal_3511d0ad186420ce95ec789c62fb4733a8f83d5a06c2054d8230a9887585fca2, $__internal_7059412d6357edb6e99e6e2caa3351ec01774edc881d4fdc461e01f5d3111d27)))) {
+        if ((is_string($__internal_9dbd023ef99620233fc13358c72442dd2c14050a8ef24e7e186b61a854ad4ede = (isset($context["php_version"]) ? $context["php_version"] : null)) && is_string($__internal_9ce80ede74e80015027aa262e12acb22310e11a3d12c49ecedb16ab998cb970a = "5.4") && ('' === $__internal_9ce80ede74e80015027aa262e12acb22310e11a3d12c49ecedb16ab998cb970a || 0 === strpos($__internal_9dbd023ef99620233fc13358c72442dd2c14050a8ef24e7e186b61a854ad4ede, $__internal_9ce80ede74e80015027aa262e12acb22310e11a3d12c49ecedb16ab998cb970a)))) {
             // line 4
             echo "<div class=\"g-grid\">
     <div class=\"g-block alert alert-warning g-php-outdated\">

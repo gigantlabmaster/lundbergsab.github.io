@@ -1,21 +1,45 @@
 <?php
 return [
     '@class' => 'Gantry\\Component\\Config\\CompiledConfig',
-    'timestamp' => 1490760091,
-    'checksum' => 'd26eb90a9e475959544388a390d1e446',
+    'timestamp' => 1490760650,
+    'checksum' => '70496872019e6fbd1305f61c63ff96fa',
     'files' => [
         'user/data/gantry5/themes/g5_helium/config/default' => [
             'index' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/index.yaml',
-                'modified' => 1490760090
+                'modified' => 1489110738
             ],
             'layout' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/layout.yaml',
-                'modified' => 1490760090
+                'modified' => 1489110738
+            ],
+            'page/body' => [
+                'file' => 'user/data/gantry5/themes/g5_helium/config/default/page/body.yaml',
+                'modified' => 1489110738
+            ],
+            'particles/branding' => [
+                'file' => 'user/data/gantry5/themes/g5_helium/config/default/particles/branding.yaml',
+                'modified' => 1489110738
+            ],
+            'particles/copyright' => [
+                'file' => 'user/data/gantry5/themes/g5_helium/config/default/particles/copyright.yaml',
+                'modified' => 1489110738
+            ],
+            'particles/logo' => [
+                'file' => 'user/data/gantry5/themes/g5_helium/config/default/particles/logo.yaml',
+                'modified' => 1489110738
+            ],
+            'particles/social' => [
+                'file' => 'user/data/gantry5/themes/g5_helium/config/default/particles/social.yaml',
+                'modified' => 1489110738
+            ],
+            'particles/totop' => [
+                'file' => 'user/data/gantry5/themes/g5_helium/config/default/particles/totop.yaml',
+                'modified' => 1489110738
             ],
             'styles' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/styles.yaml',
-                'modified' => 1490760077
+                'modified' => 1490760650
             ]
         ],
         'user/themes/g5_helium/config/default' => [
@@ -461,15 +485,14 @@ return [
         ],
         'index' => [
             'name' => 'default',
-            'timestamp' => 1490760090,
+            'timestamp' => 1477304780,
             'version' => 7,
             'preset' => [
                 'image' => 'gantry-admin://images/layouts/default.png',
                 'name' => 'default',
-                'timestamp' => 1489131972
+                'timestamp' => 1475608600
             ],
             'positions' => [
-                'aside' => 'Aside',
                 'sidebar' => 'Sidebar'
             ],
             'sections' => [
@@ -481,9 +504,8 @@ return [
                 'testimonials' => 'Testimonials',
                 'expanded' => 'Expanded',
                 'header' => 'Header',
-                'aside' => 'Aside',
-                'sidebar' => 'Sidebar',
                 'mainbar' => 'Mainbar',
+                'sidebar' => 'Sidebar',
                 'footer' => 'Footer',
                 'offcanvas' => 'Offcanvas'
             ],
@@ -498,12 +520,11 @@ return [
                 'social' => [
                     'social-3171' => 'Social'
                 ],
-                'position' => [
-                    'position-position-4734' => 'Aside',
-                    'position-position-3949' => 'Sidebar'
-                ],
                 'content' => [
                     'system-content-1587' => 'Page Content'
+                ],
+                'position' => [
+                    'position-position-3949' => 'Sidebar'
                 ],
                 'copyright' => [
                     'copyright-1736' => 'Copyright'
@@ -527,7 +548,7 @@ return [
             'preset' => [
                 'image' => 'gantry-admin://images/layouts/default.png',
                 'name' => 'default',
-                'timestamp' => 1489131972
+                'timestamp' => 1475608600
             ],
             'layout' => [
                 '/navigation/' => [
@@ -561,20 +582,13 @@ return [
                 '/container-main/' => [
                     0 => [
                         0 => [
-                            'aside 25' => [
-                                0 => [
-                                    0 => 'position-position-4734'
-                                ]
-                            ]
-                        ],
-                        1 => [
-                            'mainbar 50' => [
+                            'mainbar 75' => [
                                 0 => [
                                     0 => 'system-content-1587'
                                 ]
                             ]
                         ],
-                        2 => [
+                        1 => [
                             'sidebar 25' => [
                                 0 => [
                                     0 => 'position-position-3949'
@@ -647,27 +661,13 @@ return [
                         'boxed' => ''
                     ]
                 ],
-                'aside' => [
-                    'attributes' => [
-                        'class' => ''
-                    ],
-                    'block' => [
-                        'fixed' => '1'
-                    ]
-                ],
                 'mainbar' => [
                     'type' => 'section',
                     'subtype' => 'main'
                 ],
                 'sidebar' => [
                     'type' => 'section',
-                    'subtype' => 'aside',
-                    'attributes' => [
-                        'class' => ''
-                    ],
-                    'block' => [
-                        'fixed' => '1'
-                    ]
+                    'subtype' => 'aside'
                 ],
                 'container-main' => [
                     'attributes' => [
@@ -692,12 +692,6 @@ return [
                 'social-3171' => [
                     'block' => [
                         'class' => 'g-social-header'
-                    ]
-                ],
-                'position-position-4734' => [
-                    'title' => 'Aside',
-                    'attributes' => [
-                        'key' => 'aside'
                     ]
                 ],
                 'position-position-3949' => [

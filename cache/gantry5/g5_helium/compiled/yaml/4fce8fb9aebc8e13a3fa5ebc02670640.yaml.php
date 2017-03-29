@@ -2,13 +2,13 @@
 return [
     '@class' => 'Gantry\\Component\\File\\CompiledYamlFile',
     'filename' => '/Users/emilkarlsson/Code/lundbergsab/user/data/gantry5/themes/g5_helium/config/default/layout.yaml',
-    'modified' => 1490760090,
+    'modified' => 1489110738,
     'data' => [
         'version' => 2,
         'preset' => [
             'image' => 'gantry-admin://images/layouts/default.png',
             'name' => 'default',
-            'timestamp' => 1489131972
+            'timestamp' => 1475608600
         ],
         'layout' => [
             '/navigation/' => [
@@ -42,20 +42,13 @@ return [
             '/container-main/' => [
                 0 => [
                     0 => [
-                        'aside 25' => [
-                            0 => [
-                                0 => 'position-position-4734'
-                            ]
-                        ]
-                    ],
-                    1 => [
-                        'mainbar 50' => [
+                        'mainbar 75' => [
                             0 => [
                                 0 => 'system-content-1587'
                             ]
                         ]
                     ],
-                    2 => [
+                    1 => [
                         'sidebar 25' => [
                             0 => [
                                 0 => 'position-position-3949'
@@ -128,27 +121,13 @@ return [
                     'boxed' => ''
                 ]
             ],
-            'aside' => [
-                'attributes' => [
-                    'class' => ''
-                ],
-                'block' => [
-                    'fixed' => '1'
-                ]
-            ],
             'mainbar' => [
                 'type' => 'section',
                 'subtype' => 'main'
             ],
             'sidebar' => [
                 'type' => 'section',
-                'subtype' => 'aside',
-                'attributes' => [
-                    'class' => ''
-                ],
-                'block' => [
-                    'fixed' => '1'
-                ]
+                'subtype' => 'aside'
             ],
             'container-main' => [
                 'attributes' => [
@@ -173,12 +152,6 @@ return [
             'social-3171' => [
                 'block' => [
                     'class' => 'g-social-header'
-                ]
-            ],
-            'position-position-4734' => [
-                'title' => 'Aside',
-                'attributes' => [
-                    'key' => 'aside'
                 ]
             ],
             'position-position-3949' => [

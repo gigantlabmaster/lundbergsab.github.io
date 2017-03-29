@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/emilkarlsson/Code/lundbergsab/system/blueprints/config/streams.yaml',
-    'modified' => 1490730587,
+    'modified' => 1487344186,
     'data' => [
         'title' => 'PLUGIN_ADMIN.FILE_STREAMS',
         'form' => [

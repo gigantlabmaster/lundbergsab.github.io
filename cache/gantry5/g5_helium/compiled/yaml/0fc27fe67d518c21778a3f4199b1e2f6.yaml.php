@@ -2,7 +2,7 @@
 return [
     '@class' => 'Gantry\\Component\\File\\CompiledYamlFile',
     'filename' => '/Users/emilkarlsson/Code/lundbergsab/system/blueprints/pages/default.yaml',
-    'modified' => 1490730587,
+    'modified' => 1487344186,
     'data' => [
         'title' => 'PLUGIN_ADMIN.DEFAULT',
         'rules' => [

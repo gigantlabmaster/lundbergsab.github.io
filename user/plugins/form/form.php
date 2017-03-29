@@ -189,16 +189,16 @@ class FormPlugin extends Plugin
                 $current_form_name = $this->getFormName($this->grav['page']);
                 $this->json_response = [];
 
-                if ($this->form = $this->getFormByName($current_form_name)) {
+                if ($form = $this->getFormByName($current_form_name)) {
                     if ($this->grav['uri']->extension() === 'json' && isset($_POST['__form-file-uploader__'])) {
-                        $this->json_response = $this->form->uploadFiles();
+                        $this->json_response = $form->uploadFiles();
                     } else {
-                        $this->form->post();
+                        $form->post();
                         $submitted = true;
                     }
                 } elseif (isset($this->grav['page']->header()->form)) {
-                    $this->form = new Form($this->grav['page']);
-                    $this->form->post();
+                    $form = new Form($this->grav['page']);
+                    $form->post();
                     $submitted = true;
                 }
             }
@@ -259,9 +259,7 @@ class FormPlugin extends Plugin
         $current_page_route = $this->getCurrentPageRoute();
         $found_forms = [];
 
-        if (isset($this->form)) {
-            $this->grav['twig']->twig_vars['form'] = $this->form;
-        } elseif (!isset($this->grav['twig']->twig_vars['form'])) {
+        if (!isset($this->grav['twig']->twig_vars['form'])) {
             if (isset($this->forms[$page_route])) {
                 $found_forms = $this->forms[$page_route];
             } elseif (isset($this->forms[$current_page_route])) {
@@ -528,11 +526,6 @@ class FormPlugin extends Plugin
                     $form->setData($field['name'], gmdate('D, d M Y H:i:s', time()));
                 }
             }
-        }
-
-        // Set page template if passed by form
-        if (isset($form->template)) {
-            $this->grav['page']->template($form->template);
         }
     }
 

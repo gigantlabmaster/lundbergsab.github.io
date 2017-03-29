@@ -130,7 +130,7 @@ class __TwigTemplate_8fc8a88bb196c5e1ed930fd70c3c7b06cc29c12c61a3e72e28a4784e041
         }
         // line 52
         echo "                    ";
-        if ((((isset($context["configuration"]) ? $context["configuration"] : null) && ((isset($context["configuration"]) ? $context["configuration"] : null) != "default")) &&  !(is_string($__internal_3f3028d630e2994d8a030a38309f873680db878e4342894a184fe7de7cb9547e = (isset($context["configuration"]) ? $context["configuration"] : null)) && is_string($__internal_3387ca78a8d16cefc45dad6667f2e4aafade7d15cf2fa596665551a9b049df00 = "_") && ('' === $__internal_3387ca78a8d16cefc45dad6667f2e4aafade7d15cf2fa596665551a9b049df00 || 0 === strpos($__internal_3f3028d630e2994d8a030a38309f873680db878e4342894a184fe7de7cb9547e, $__internal_3387ca78a8d16cefc45dad6667f2e4aafade7d15cf2fa596665551a9b049df00))))) {
+        if ((((isset($context["configuration"]) ? $context["configuration"] : null) && ((isset($context["configuration"]) ? $context["configuration"] : null) != "default")) &&  !(is_string($__internal_f91d24b8eb8abaebad288f3af73f41f8cc57c3cc02e31d53aa68c2adf7ec8d02 = (isset($context["configuration"]) ? $context["configuration"] : null)) && is_string($__internal_c6148e55889fd007830712bbbea282795dd6c8f29b8bcd880a05eda59fadbe61 = "_") && ('' === $__internal_c6148e55889fd007830712bbbea282795dd6c8f29b8bcd880a05eda59fadbe61 || 0 === strpos($__internal_f91d24b8eb8abaebad288f3af73f41f8cc57c3cc02e31d53aa68c2adf7ec8d02, $__internal_c6148e55889fd007830712bbbea282795dd6c8f29b8bcd880a05eda59fadbe61))))) {
             // line 53
             echo "                    <li ";
             echo ((((isset($context["location"]) ? $context["location"] : null) == "configurations/assignments")) ? ("class=\"active\"") : (""));

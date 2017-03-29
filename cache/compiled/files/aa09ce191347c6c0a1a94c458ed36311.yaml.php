@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/emilkarlsson/Code/lundbergsab/user/plugins/admin/languages/fa.yaml',
-    'modified' => 1490730587,
+    'modified' => 1489110742,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'این یک نسخه تکمیل نشده است! استفاده از آن در محصولتان شمارا با خطر مواجه میکند...',

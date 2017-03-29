@@ -2,18 +2,17 @@
 return [
     '@class' => 'Gantry\\Component\\File\\CompiledYamlFile',
     'filename' => '/Users/emilkarlsson/Code/lundbergsab/user/data/gantry5/themes/g5_helium/config/default/index.yaml',
-    'modified' => 1490760090,
+    'modified' => 1489110738,
     'data' => [
         'name' => 'default',
-        'timestamp' => 1490760090,
+        'timestamp' => 1477304780,
         'version' => 7,
         'preset' => [
             'image' => 'gantry-admin://images/layouts/default.png',
             'name' => 'default',
-            'timestamp' => 1489131972
+            'timestamp' => 1475608600
         ],
         'positions' => [
-            'aside' => 'Aside',
             'sidebar' => 'Sidebar'
         ],
         'sections' => [
@@ -25,9 +24,8 @@ return [
             'testimonials' => 'Testimonials',
             'expanded' => 'Expanded',
             'header' => 'Header',
-            'aside' => 'Aside',
-            'sidebar' => 'Sidebar',
             'mainbar' => 'Mainbar',
+            'sidebar' => 'Sidebar',
             'footer' => 'Footer',
             'offcanvas' => 'Offcanvas'
         ],
@@ -42,12 +40,11 @@ return [
             'social' => [
                 'social-3171' => 'Social'
             ],
-            'position' => [
-                'position-position-4734' => 'Aside',
-                'position-position-3949' => 'Sidebar'
-            ],
             'content' => [
                 'system-content-1587' => 'Page Content'
+            ],
+            'position' => [
+                'position-position-3949' => 'Sidebar'
             ],
             'copyright' => [
                 'copyright-1736' => 'Copyright'

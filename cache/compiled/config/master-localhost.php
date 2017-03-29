@@ -1,65 +1,65 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1490759992,
-    'checksum' => 'b2f54379707e41bda252298fca0f463b',
+    'timestamp' => 1490760615,
+    'checksum' => '1753019c8f92f404bdfa6e578568cc4b',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1490730706
+                'modified' => 1490760612
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1490730705
+                'modified' => 1490760612
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1490730587
+                'modified' => 1487344186
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
-                'modified' => 1490730706
+                'modified' => 1490760612
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1490759992
+                'modified' => 1489110754
             ]
         ],
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1490730587
+                'modified' => 1487344186
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1490730587
+                'modified' => 1487344186
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1490730587
+                'modified' => 1487344186
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1490730587
+                'modified' => 1487344186
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1490730587
+                'modified' => 1489110742
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1490730588
+                'modified' => 1489110744
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1490730588
+                'modified' => 1487344186
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1490759912
+                'modified' => 1489110750
             ],
             'plugins/gantry5' => [
                 'file' => 'user/plugins/gantry5/gantry5.yaml',
@@ -67,15 +67,23 @@ return [
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1490730589
+                'modified' => 1489110752
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
-                'modified' => 1490730589
+                'modified' => 1487344186
+            ],
+            'plugins/pagination' => [
+                'file' => 'user/plugins/pagination/pagination.yaml',
+                'modified' => 1489110754
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1490730589
+                'modified' => 1487344188
+            ],
+            'plugins/simplesearch' => [
+                'file' => 'user/plugins/simplesearch/simplesearch.yaml',
+                'modified' => 1489110752
             ]
         ]
     ],
@@ -237,9 +245,31 @@ return [
                     3 => 'green'
                 ]
             ],
+            'pagination' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'delta' => 0
+            ],
             'problems' => [
                 'enabled' => true,
                 'built_in_css' => true
+            ],
+            'simplesearch' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'display_button' => false,
+                'min_query_length' => 3,
+                'route' => '/search',
+                'template' => 'simplesearch_results',
+                'filters' => [
+                    'category' => 'blog'
+                ],
+                'filter_combinator' => 'and',
+                'ignore_accented_characters' => true,
+                'order' => [
+                    'by' => 'date',
+                    'dir' => 'desc'
+                ]
             ]
         ],
         'media' => [
@@ -661,7 +691,7 @@ return [
                 'cache' => true,
                 'debug' => true,
                 'auto_reload' => true,
-                'autoescape' => false,
+                'autoescape' => true,
                 'undefined_functions' => true,
                 'undefined_filters' => true,
                 'umask_fix' => false
@@ -683,15 +713,14 @@ return [
                 ]
             ],
             'errors' => [
-                'display' => true,
+                'display' => 0,
                 'log' => true
             ],
             'debugger' => [
                 'enabled' => false,
                 'shutdown' => [
                     'close_connection' => true
-                ],
-                'twig' => true
+                ]
             ],
             'images' => [
                 'default_image_quality' => 85,
@@ -727,7 +756,7 @@ return [
             ]
         ],
         'security' => [
-            'salt' => 'pWfx4jNy8n19BT'
+            'salt' => 'lIrYsA1FqcMxoQ'
         ]
     ]
 ];
