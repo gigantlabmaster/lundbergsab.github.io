@@ -3,13 +3,13 @@ title: Services
 menu: Services
 class: small
 services:
-    - header: E-Commerce
+    - header: Svensktillverkat
       icon: shopping-cart
       text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-    - header: Responsive Design
+    - header: Specialanpassat
       icon: laptop
       text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-    - header: Web Security
+    - header: Service
       icon: lock
       text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
 ---
