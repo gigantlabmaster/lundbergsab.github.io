@@ -2,15 +2,29 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/emilkarlsson/Code/lundbergsab/user/config/site.yaml',
-    'modified' => 1489410100,
+    'modified' => 1490892466,
     'data' => [
-        'title' => 'Grav',
+        'title' => 'Lundbergs AB',
+        'default_lang' => 'se',
         'author' => [
-            'name' => 'Joe Bloggs',
-            'email' => 'joe@test.com'
+            'name' => 'Matilda',
+            'email' => 'info@lundbergsab.se'
+        ],
+        'taxonomies' => [
+            0 => 'category',
+            1 => 'tag'
         ],
         'metadata' => [
             'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+        ],
+        'summary' => [
+            'enabled' => true,
+            'format' => 'short',
+            'size' => 300,
+            'delimiter' => '==='
+        ],
+        'blog' => [
+            'route' => '/blog'
         ],
         'email' => 'your-email@domain.com',
         'description' => 'Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.',

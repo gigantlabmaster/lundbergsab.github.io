@@ -5,8 +5,6 @@ wrapped_site: false
 reverse_proxy_setup: false
 force_ssl: false
 languages:
-  supported:
-    - se
   include_default_lang: true
   translations: true
   translations_fallback: true
