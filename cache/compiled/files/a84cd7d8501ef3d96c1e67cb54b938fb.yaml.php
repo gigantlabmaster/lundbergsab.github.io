@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/emilkarlsson/Code/lundbergsab/user/config/site.yaml',
-    'modified' => 1490892466,
+    'modified' => 1490895617,
     'data' => [
         'title' => 'Lundbergs AB',
         'default_lang' => 'se',
@@ -30,23 +30,23 @@ return [
         'description' => 'Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.',
         'links' => [
             0 => [
-                'title' => 'Services',
+                'title' => 'Affärsområden',
                 'url' => '#services'
             ],
             1 => [
-                'title' => 'Portfolio',
+                'title' => 'Verksamheter',
                 'url' => '#portfolio'
             ],
             2 => [
-                'title' => 'About',
+                'title' => 'Om oss',
                 'url' => '#about'
             ],
             3 => [
-                'title' => 'Team',
+                'title' => 'Försäljning',
                 'url' => '#team'
             ],
             4 => [
-                'title' => 'Contact',
+                'title' => 'Kontakt',
                 'url' => '#contact'
             ]
         ],

@@ -19,19 +19,19 @@ email: your-email@domain.com
 description: 'Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.'
 links:
   -
-    title: Services
+    title: Affärsområden
     url: '#services'
   -
-    title: Portfolio
+    title: Verksamheter
     url: '#portfolio'
   -
-    title: About
+    title: Om oss
     url: '#about'
   -
-    title: Team
+    title: Försäljning
     url: '#team'
   -
-    title: Contact
+    title: Kontakt
     url: '#contact'
 social:
   -

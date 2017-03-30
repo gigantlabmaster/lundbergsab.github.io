@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1490894533,
-    'checksum' => '75b2b59dbefa714117581e9ef6806f6a',
+    'timestamp' => 1490895620,
+    'checksum' => '9f98deb76600578985b959e70cdc04c6',
     'files' => [
         'user/config' => [
             'media' => [
@@ -15,7 +15,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1490892466
+                'modified' => 1490895617
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -529,23 +529,23 @@ return [
             'description' => 'Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.',
             'links' => [
                 0 => [
-                    'title' => 'Services',
+                    'title' => 'Affärsområden',
                     'url' => '#services'
                 ],
                 1 => [
-                    'title' => 'Portfolio',
+                    'title' => 'Verksamheter',
                     'url' => '#portfolio'
                 ],
                 2 => [
-                    'title' => 'About',
+                    'title' => 'Om oss',
                     'url' => '#about'
                 ],
                 3 => [
-                    'title' => 'Team',
+                    'title' => 'Försäljning',
                     'url' => '#team'
                 ],
                 4 => [
-                    'title' => 'Contact',
+                    'title' => 'Kontakt',
                     'url' => '#contact'
                 ]
             ],
