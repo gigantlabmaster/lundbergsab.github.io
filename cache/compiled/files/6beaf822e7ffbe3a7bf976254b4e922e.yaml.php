@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/emilkarlsson/Code/lundbergsab/system/blueprints/pages/modular.yaml',
-    'modified' => 1489410048,
+    'modified' => 1489410100,
     'data' => [
         'title' => 'PLUGIN_ADMIN.MODULAR',
         '@extends' => [

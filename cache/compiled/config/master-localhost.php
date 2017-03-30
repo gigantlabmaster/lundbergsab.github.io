@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1490891709,
-    'checksum' => 'f6893d803009c63590c4a0fdd3faa1e8',
+    'timestamp' => 1490892466,
+    'checksum' => 'ff56605edb5f43cd3a2776f858ed1c6d',
     'files' => [
         'user/config' => [
             'media' => [
@@ -15,7 +15,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1489410100
+                'modified' => 1490892466
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -23,7 +23,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1489410100
+                'modified' => 1490892412
             ]
         ],
         'system/config' => [
@@ -59,7 +59,7 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1489410048
+                'modified' => 1490892264
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
@@ -485,11 +485,11 @@ return [
             ]
         ],
         'site' => [
-            'title' => 'Grav',
-            'default_lang' => 'en',
+            'title' => 'Lundbergs AB',
+            'default_lang' => 'se',
             'author' => [
-                'name' => 'Joe Bloggs',
-                'email' => 'joe@test.com'
+                'name' => 'Matilda',
+                'email' => 'info@lundbergsab.se'
             ],
             'taxonomies' => [
                 0 => 'category',
@@ -599,7 +599,7 @@ return [
         ],
         'system' => [
             'absolute_urls' => false,
-            'timezone' => '',
+            'timezone' => 'Europe/Stockholm',
             'default_locale' => NULL,
             'param_sep' => ':',
             'wrapped_site' => false,
@@ -608,7 +608,7 @@ return [
             'custom_base_url' => '',
             'languages' => [
                 'supported' => [
-                    
+                    0 => 'se'
                 ],
                 'include_default_lang' => true,
                 'translations' => true,
@@ -631,7 +631,7 @@ return [
                     'count' => 20
                 ],
                 'dateformat' => [
-                    'default' => NULL,
+                    'default' => 'd-m-Y H:i',
                     'short' => 'jS M Y',
                     'long' => 'F jS \\a\\t g:ia'
                 ],
@@ -671,7 +671,7 @@ return [
                 'etag' => false,
                 'vary_accept_encoding' => false,
                 'redirect_default_route' => false,
-                'redirect_default_code' => 301,
+                'redirect_default_code' => '301',
                 'redirect_trailing_slash' => true,
                 'ignore_files' => [
                     0 => '.DS_Store'
@@ -731,7 +731,7 @@ return [
                 ]
             ],
             'errors' => [
-                'display' => 0,
+                'display' => '0',
                 'log' => true
             ],
             'debugger' => [

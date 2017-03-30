@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/emilkarlsson/Code/lundbergsab/user/plugins/form/blueprints.yaml',
-    'modified' => 1489410048,
+    'modified' => 1490892264,
     'data' => [
         'name' => 'Form',
-        'version' => '2.2.0',
+        'version' => '2.3.1',
         'description' => 'Enables the forms handling',
         'icon' => 'check-square',
         'author' => [
