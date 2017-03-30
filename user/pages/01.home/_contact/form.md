@@ -3,5 +3,5 @@ title: 'contact'
 cache_enable: false
 ---
 
-## CONTACT US
+## Kontakta oss
 ### Lorem ipsum dolor sit amet consectetur.

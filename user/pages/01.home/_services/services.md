@@ -14,5 +14,5 @@ services:
       text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
 ---
 
-## Services
+## Affärsområden
 ### Lorem ipsum dolor sit amet consectetur
