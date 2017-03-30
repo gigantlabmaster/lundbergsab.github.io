@@ -1,29 +1,21 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1490889524,
-    'checksum' => '5d287866406f692469ced53ddb6cf87c',
+    'timestamp' => 1490891157,
+    'checksum' => '0320674c438d7a60fbef3baf8812ca0d',
     'files' => [
         'user/config' => [
-            'media' => [
-                'file' => 'user/config/media.yaml',
-                'modified' => 1490889063
-            ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1490889062
+                'modified' => 1490891157
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1489410048
-            ],
-            'streams' => [
-                'file' => 'user/config/streams.yaml',
-                'modified' => 1490889063
+                'modified' => 1489410100
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1490889524
+                'modified' => 1489410100
             ]
         ],
         'system/config' => [
@@ -45,89 +37,26 @@ return [
             ]
         ],
         'user/plugins' => [
-            'plugins/admin' => [
-                'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1489410048
-            ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1489410048
+                'modified' => 1489410102
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1489410048
+                'modified' => 1489410104
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1489410048
-            ],
-            'plugins/login' => [
-                'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1489410048
-            ],
-            'plugins/markdown-notices' => [
-                'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
-                'modified' => 1489410048
+                'modified' => 1489410104
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1489410048
+                'modified' => 1489410104
             ]
         ]
     ],
     'data' => [
         'plugins' => [
-            'admin' => [
-                'enabled' => true,
-                'route' => '/admin',
-                'cache_enabled' => false,
-                'theme' => 'grav',
-                'logo_text' => '',
-                'body_classes' => '',
-                'sidebar' => [
-                    'activate' => 'tab',
-                    'hover_delay' => 100,
-                    'size' => 'auto'
-                ],
-                'dashboard' => [
-                    'days_of_stats' => 7
-                ],
-                'widgets' => [
-                    'dashboard-maintenance' => true,
-                    'dashboard-statistics' => true,
-                    'dashboard-notifications' => true,
-                    'dashboard-feed' => true,
-                    'dashboard-pages' => true
-                ],
-                'session' => [
-                    'timeout' => 1800
-                ],
-                'warnings' => [
-                    'delete_page' => true
-                ],
-                'edit_mode' => 'normal',
-                'show_github_msg' => true,
-                'google_fonts' => true,
-                'enable_auto_updates_check' => true,
-                'notifications' => [
-                    'feed' => true,
-                    'dashboard' => true,
-                    'plugins' => true,
-                    'themes' => true
-                ],
-                'popularity' => [
-                    'enabled' => true,
-                    'ignore' => [
-                        0 => '/test*',
-                        1 => '/modular'
-                    ],
-                    'history' => [
-                        'daily' => 30,
-                        'monthly' => 12,
-                        'visitors' => 20
-                    ]
-                ]
-            ],
             'email' => [
                 'enabled' => true,
                 'from' => NULL,
@@ -169,56 +98,6 @@ return [
                     'accept' => [
                         0 => 'image/*'
                     ]
-                ]
-            ],
-            'login' => [
-                'enabled' => true,
-                'built_in_css' => true,
-                'route' => NULL,
-                'route_register' => false,
-                'route_activate' => '/activate_user',
-                'route_forgot' => '/forgot_password',
-                'route_reset' => '/reset_password',
-                'redirect_after_login' => NULL,
-                'parent_acl' => false,
-                'protect_protected_page_media' => false,
-                'user_registration' => [
-                    'enabled' => true,
-                    'fields' => [
-                        0 => 'username',
-                        1 => 'password',
-                        2 => 'email',
-                        3 => 'fullname',
-                        4 => 'title'
-                    ],
-                    'access' => [
-                        'site' => [
-                            'login' => 'true'
-                        ]
-                    ],
-                    'options' => [
-                        'validate_password1_and_password2' => true,
-                        'set_user_disabled' => false,
-                        'login_after_registration' => true,
-                        'send_activation_email' => false,
-                        'send_notification_email' => false,
-                        'send_welcome_email' => false
-                    ]
-                ],
-                'rememberme' => [
-                    'enabled' => true,
-                    'timeout' => 604800,
-                    'name' => 'grav-rememberme'
-                ]
-            ],
-            'markdown-notices' => [
-                'enabled' => true,
-                'built_in_css' => true,
-                'level_classes' => [
-                    0 => 'yellow',
-                    1 => 'red',
-                    2 => 'blue',
-                    3 => 'green'
                 ]
             ],
             'problems' => [
@@ -508,6 +387,70 @@ return [
             'routes' => NULL,
             'blog' => [
                 'route' => '/blog'
+            ],
+            'email' => 'your-email@domain.com',
+            'description' => 'Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.',
+            'links' => [
+                0 => [
+                    'title' => 'Services',
+                    'url' => '#services'
+                ],
+                1 => [
+                    'title' => 'Portfolio',
+                    'url' => '#portfolio'
+                ],
+                2 => [
+                    'title' => 'About',
+                    'url' => '#about'
+                ],
+                3 => [
+                    'title' => 'Team',
+                    'url' => '#team'
+                ],
+                4 => [
+                    'title' => 'Contact',
+                    'url' => '#contact'
+                ]
+            ],
+            'social' => [
+                0 => [
+                    'title' => 'twitter',
+                    'url' => 'http://twitter.com/jekyllrb'
+                ],
+                1 => [
+                    'title' => 'facebook',
+                    'url' => NULL
+                ],
+                2 => [
+                    'title' => 'stack-overflow',
+                    'url' => 'http://stackoverflow.com/questions/tagged/jekyll'
+                ],
+                3 => [
+                    'title' => 'bitbucket',
+                    'url' => 'http://bitbucket.org/jekyll'
+                ],
+                4 => [
+                    'title' => 'github',
+                    'url' => 'http://github.com/jekyll'
+                ]
+            ],
+            'address' => [
+                0 => [
+                    'line' => '3481 Melrose Place'
+                ],
+                1 => [
+                    'line' => 'Beverly Hills, CA 90210'
+                ]
+            ],
+            'quicklinks' => [
+                0 => [
+                    'title' => 'Privacy Policy',
+                    'url' => '#'
+                ],
+                1 => [
+                    'title' => 'Terms of Use',
+                    'url' => '#'
+                ]
             ]
         ],
         'streams' => [
@@ -583,7 +526,7 @@ return [
                     'twig' => true
                 ],
                 'markdown' => [
-                    'extra' => false,
+                    'extra' => true,
                     'auto_line_breaks' => false,
                     'auto_url_links' => false,
                     'escape_markup' => false,
@@ -627,7 +570,7 @@ return [
                 ]
             ],
             'cache' => [
-                'enabled' => true,
+                'enabled' => false,
                 'check' => [
                     'method' => 'file'
                 ],
@@ -667,7 +610,7 @@ return [
                 ]
             ],
             'errors' => [
-                'display' => true,
+                'display' => 0,
                 'log' => true
             ],
             'debugger' => [
@@ -711,7 +654,7 @@ return [
             ]
         ],
         'security' => [
-            'salt' => 'W30rJ6UM4mQL7a'
+            'salt' => 'JhMF390Xr8qcuH'
         ]
     ]
 ];
