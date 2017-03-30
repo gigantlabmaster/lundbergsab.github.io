@@ -2,11 +2,11 @@
 title: Header
 menu: Top
 buttons:
-    - text: Tell me more
+    - text: Om oss
       url: '#about'
       primary: true
 featured: header.jpg
 ---
 
-# Welcome To Our Studio!
-## It's Nice To Meet You
+# Välkommen till Lundbergs AB
+## Roligt att du hittat hit

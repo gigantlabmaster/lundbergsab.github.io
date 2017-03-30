@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/emilkarlsson/Code/lundbergsab/user/config/system.yaml',
-    'modified' => 1490892412,
+    'modified' => 1490892710,
     'data' => [
         'absolute_urls' => false,
         'timezone' => 'Europe/Stockholm',
@@ -11,9 +11,6 @@ return [
         'reverse_proxy_setup' => false,
         'force_ssl' => false,
         'languages' => [
-            'supported' => [
-                0 => 'se'
-            ],
             'include_default_lang' => true,
             'translations' => true,
             'translations_fallback' => true,
