@@ -20,9 +20,6 @@ description: 'Write an awesome description for your new site here. You can edit 
 links:
   -
     title: Affärsområden
-    url: '#services'
-  -
-    title: Verksamheter
     url: '#portfolio'
   -
     title: Om oss

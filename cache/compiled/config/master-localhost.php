@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1490895620,
-    'checksum' => '9f98deb76600578985b959e70cdc04c6',
+    'timestamp' => 1490896484,
+    'checksum' => '726c3c3078710563344cf2349d847c7f',
     'files' => [
         'user/config' => [
             'media' => [
@@ -15,7 +15,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1490895617
+                'modified' => 1490896481
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -530,21 +530,17 @@ return [
             'links' => [
                 0 => [
                     'title' => 'Affärsområden',
-                    'url' => '#services'
-                ],
-                1 => [
-                    'title' => 'Verksamheter',
                     'url' => '#portfolio'
                 ],
-                2 => [
+                1 => [
                     'title' => 'Om oss',
                     'url' => '#about'
                 ],
-                3 => [
+                2 => [
                     'title' => 'Försäljning',
                     'url' => '#team'
                 ],
-                4 => [
+                3 => [
                     'title' => 'Kontakt',
                     'url' => '#contact'
                 ]

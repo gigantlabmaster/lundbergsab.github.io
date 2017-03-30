@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/emilkarlsson/Code/lundbergsab/user/config/site.yaml',
-    'modified' => 1490895617,
+    'modified' => 1490896481,
     'data' => [
         'title' => 'Lundbergs AB',
         'default_lang' => 'se',
@@ -31,21 +31,17 @@ return [
         'links' => [
             0 => [
                 'title' => 'Affärsområden',
-                'url' => '#services'
-            ],
-            1 => [
-                'title' => 'Verksamheter',
                 'url' => '#portfolio'
             ],
-            2 => [
+            1 => [
                 'title' => 'Om oss',
                 'url' => '#about'
             ],
-            3 => [
+            2 => [
                 'title' => 'Försäljning',
                 'url' => '#team'
             ],
-            4 => [
+            3 => [
                 'title' => 'Kontakt',
                 'url' => '#contact'
             ]
