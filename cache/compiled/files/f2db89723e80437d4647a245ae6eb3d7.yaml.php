@@ -2,23 +2,24 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/emilkarlsson/Code/lundbergsab/user/config/system.yaml',
-    'modified' => 1489410100,
+    'modified' => 1489410048,
     'data' => [
+        'absolute_urls' => false,
         'home' => [
             'alias' => '/home'
         ],
         'pages' => [
-            'theme' => 'agency',
+            'theme' => 'antimatter',
+            'markdown' => [
+                'extra' => false
+            ],
             'process' => [
                 'markdown' => true,
                 'twig' => false
-            ],
-            'markdown' => [
-                'extra' => true
             ]
         ],
         'cache' => [
-            'enabled' => false,
+            'enabled' => true,
             'check' => [
                 'method' => 'file'
             ],
@@ -38,12 +39,19 @@ return [
             'js_pipeline' => false,
             'js_minify' => true
         ],
+        'errors' => [
+            'display' => true,
+            'log' => true
+        ],
         'debugger' => [
             'enabled' => false,
             'twig' => true,
             'shutdown' => [
                 'close_connection' => true
             ]
+        ],
+        'gpm' => [
+            'verify_peer' => true
         ]
     ]
 ];
